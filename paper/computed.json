@@ -1,0 +1,2685 @@
+{
+ "totals": {
+  "corpus": 20393,
+  "effort": {
+   "cleaned-ai": 9542,
+   "human-built": 9243,
+   "slop": 1608
+  },
+  "slop_pct": 7.9,
+  "nonslop": 18785,
+  "confidence": {
+   "high": 8256,
+   "medium": 11493,
+   "low": 644
+  },
+  "fetch_status": {
+   "ok": 20091,
+   "partial": 260,
+   "gone": 42
+  },
+  "posture": {
+   "product": 6820,
+   "mcp-server": 2364,
+   "framework": 3198,
+   "research-artifact": 1668,
+   "library": 2181,
+   "template": 1617,
+   "content-corpus": 937
+  },
+  "layer": {
+   "platform": 7855,
+   "tools-ai-wields": 7339,
+   "deploy": 1071,
+   "underlying-ai": 2520
+  },
+  "liveness": {
+   "active": 14858,
+   "slowing": 3037,
+   "dormant": 2329,
+   "archived": 169
+  }
+ },
+ "effort_by_star_band": [
+  {
+   "band": "0\u20131",
+   "n": 5308,
+   "slop_pct": 20.6,
+   "human_pct": 24.1,
+   "cleaned_pct": 55.4
+  },
+  {
+   "band": "2\u20139",
+   "n": 3944,
+   "slop_pct": 7.1,
+   "human_pct": 34.4,
+   "cleaned_pct": 58.5
+  },
+  {
+   "band": "10\u201349",
+   "n": 3033,
+   "slop_pct": 2.8,
+   "human_pct": 45.7,
+   "cleaned_pct": 51.5
+  },
+  {
+   "band": "50\u2013199",
+   "n": 2240,
+   "slop_pct": 4.6,
+   "human_pct": 53.0,
+   "cleaned_pct": 42.4
+  },
+  {
+   "band": "200\u2013999",
+   "n": 2082,
+   "slop_pct": 1.0,
+   "human_pct": 63.4,
+   "cleaned_pct": 35.6
+  },
+  {
+   "band": "1k\u20139.9k",
+   "n": 2613,
+   "slop_pct": 0.9,
+   "human_pct": 67.5,
+   "cleaned_pct": 31.6
+  },
+  {
+   "band": "10k+",
+   "n": 1173,
+   "slop_pct": 0.4,
+   "human_pct": 81.0,
+   "cleaned_pct": 18.6
+  }
+ ],
+ "effort_by_created_year": {
+  "2013": {
+   "n": 21,
+   "slop_pct": 4.8,
+   "cleaned_ai_pct_of_nonslop": 0.0
+  },
+  "2014": {
+   "n": 28,
+   "slop_pct": 0.0,
+   "cleaned_ai_pct_of_nonslop": 0.0
+  },
+  "2015": {
+   "n": 35,
+   "slop_pct": 0.0,
+   "cleaned_ai_pct_of_nonslop": 2.9
+  },
+  "2016": {
+   "n": 59,
+   "slop_pct": 1.7,
+   "cleaned_ai_pct_of_nonslop": 1.7
+  },
+  "2017": {
+   "n": 72,
+   "slop_pct": 1.4,
+   "cleaned_ai_pct_of_nonslop": 0.0
+  },
+  "2018": {
+   "n": 113,
+   "slop_pct": 0.0,
+   "cleaned_ai_pct_of_nonslop": 2.7
+  },
+  "2019": {
+   "n": 138,
+   "slop_pct": 2.9,
+   "cleaned_ai_pct_of_nonslop": 0.0
+  },
+  "2020": {
+   "n": 156,
+   "slop_pct": 0.6,
+   "cleaned_ai_pct_of_nonslop": 5.2
+  },
+  "2021": {
+   "n": 167,
+   "slop_pct": 3.6,
+   "cleaned_ai_pct_of_nonslop": 6.8
+  },
+  "2022": {
+   "n": 272,
+   "slop_pct": 1.8,
+   "cleaned_ai_pct_of_nonslop": 6.4
+  },
+  "2023": {
+   "n": 1048,
+   "slop_pct": 3.1,
+   "cleaned_ai_pct_of_nonslop": 5.5
+  },
+  "2024": {
+   "n": 1346,
+   "slop_pct": 4.1,
+   "cleaned_ai_pct_of_nonslop": 13.6
+  },
+  "2025": {
+   "n": 4586,
+   "slop_pct": 7.5,
+   "cleaned_ai_pct_of_nonslop": 42.3
+  },
+  "2026": {
+   "n": 12333,
+   "slop_pct": 9.4,
+   "cleaned_ai_pct_of_nonslop": 66.9
+  }
+ },
+ "slop": {
+  "n": 1608,
+  "n_clusters": 63,
+  "noise": 461,
+  "genres_top15": [
+   {
+    "id": "s1",
+    "n": 149,
+    "label": "MCP-server vaporware"
+   },
+   {
+    "id": "s38",
+    "n": 59,
+    "label": "Rebranded closed-binary product shells"
+   },
+   {
+    "id": "s17",
+    "n": 51,
+    "label": "RAG tutorial coursework dumps"
+   },
+   {
+    "id": "s26",
+    "n": 36,
+    "label": "Agent-skill prompt files"
+   },
+   {
+    "id": "s10",
+    "n": 34,
+    "label": "Static landing-page dumps"
+   },
+   {
+    "id": "s58",
+    "n": 32,
+    "label": "Orchestration-framework vaporware"
+   },
+   {
+    "id": "s13",
+    "n": 30,
+    "label": "Zip-dropper scam repos"
+   },
+   {
+    "id": "s62",
+    "n": 28,
+    "label": "Tutorial multi-agent wrappers"
+   },
+   {
+    "id": "s60",
+    "n": 27,
+    "label": "Agent-OS kernel fantasies"
+   },
+   {
+    "id": "s5",
+    "n": 26,
+    "label": "Empty placeholder repos"
+   },
+   {
+    "id": "s25",
+    "n": 26,
+    "label": "Persona prompt-pack farms"
+   },
+   {
+    "id": "s43",
+    "n": 26,
+    "label": "Personal LLM-course exercise dumps"
+   },
+   {
+    "id": "s14",
+    "n": 25,
+    "label": "Fake Claude-plugin download lures"
+   },
+   {
+    "id": "s59",
+    "n": 24,
+    "label": "Landing-page product mockups"
+   },
+   {
+    "id": "s21",
+    "n": 23,
+    "label": "Empty unverifiable agent repos"
+   }
+  ],
+  "liveness": {
+   "slowing": 241,
+   "active": 1057,
+   "dormant": 305,
+   "archived": 5
+  },
+  "stars_ge50": 151,
+  "stars_ge1k": 28,
+  "ge10k_ids": "[redacted \u2014 the 5 >=10k-star slop-gated repos, star counts 194477/23932/20154/12039/10129; per the naming ruling (memo section G) individual repos are not named in editorial artifacts]",
+  "median_stars": 0.0,
+  "zero_or_one_star_pct": 67.9,
+  "top_owners": "[redacted \u2014 the 8 most-prolific slop-owner handles, repo counts 24/24/9/5/3/3/3/3; per the naming ruling (memo section G) owners are not named in editorial artifacts]",
+  "created_2025_plus_pct": 93.3
+ },
+ "flags": {
+  "total_set": 2039,
+  "patterns_all": {
+   "lure_download_zip": 232,
+   "deceptive_overclaim": 147,
+   "secrets_committed": 54,
+   "rebrand_fork": 65,
+   "malware_scam": 140,
+   "star_suspect": 7,
+   "dupe": 12
+  },
+  "patterns_slop": {
+   "lure_download_zip": 102,
+   "deceptive_overclaim": 66,
+   "secrets_committed": 11,
+   "rebrand_fork": 7,
+   "malware_scam": 77,
+   "star_suspect": 3,
+   "dupe": 3
+  },
+  "patterns_nonslop": {
+   "lure_download_zip": 130,
+   "deceptive_overclaim": 81,
+   "secrets_committed": 43,
+   "rebrand_fork": 58,
+   "malware_scam": 63,
+   "star_suspect": 4,
+   "dupe": 9
+  },
+  "corpus_notes_star_inflation": 39,
+  "star_suspect_examples": "[redacted \u2014 13 repos whose own card text questions their star count; per-repo suspicion lists are not published]"
+ },
+ "groups": {
+  "unclustered": {
+   "label": "unclustered",
+   "n": 5411,
+   "median_stars": 18,
+   "ge10k": 293,
+   "active_pct": 75.3,
+   "dormant_arch_pct": 10.5,
+   "cleaned_ai_pct_of_nonslop": 56.5,
+   "median_created": "2026-02-21"
+  },
+  "SLOP": {
+   "label": "Slop stratum (mapped separately)",
+   "n": 1608,
+   "median_stars": 0.0,
+   "ge10k": 5,
+   "active_pct": 65.7,
+   "dormant_arch_pct": 19.3,
+   "cleaned_ai_pct_of_nonslop": null,
+   "median_created": "2026-05-01"
+  },
+  "G01": {
+   "label": "Coding-agent harnesses & runtimes",
+   "n": 1250,
+   "median_stars": 6.0,
+   "ge10k": 31,
+   "active_pct": 77.3,
+   "dormant_arch_pct": 7.5,
+   "cleaned_ai_pct_of_nonslop": 52.1,
+   "median_created": "2026-03-20"
+  },
+  "G21": {
+   "label": "Model substrate & off-center infra",
+   "n": 1166,
+   "median_stars": 168.0,
+   "ge10k": 129,
+   "active_pct": 57.3,
+   "dormant_arch_pct": 26.1,
+   "cleaned_ai_pct_of_nonslop": 17.7,
+   "median_created": "2025-04-06"
+  },
+  "G13": {
+   "label": "Memory, RAG & knowledge ingestion",
+   "n": 1131,
+   "median_stars": 25,
+   "ge10k": 108,
+   "active_pct": 73.2,
+   "dormant_arch_pct": 12.4,
+   "cleaned_ai_pct_of_nonslop": 54.2,
+   "median_created": "2026-02-12"
+  },
+  "G16": {
+   "label": "Assets, media & frontend generation",
+   "n": 942,
+   "median_stars": 601.0,
+   "ge10k": 168,
+   "active_pct": 67.3,
+   "dormant_arch_pct": 14.5,
+   "cleaned_ai_pct_of_nonslop": 40.0,
+   "median_created": "2025-11-22"
+  },
+  "G19": {
+   "label": "Assistants, chat clients & channel bridges",
+   "n": 773,
+   "median_stars": 28,
+   "ge10k": 32,
+   "active_pct": 73.9,
+   "dormant_arch_pct": 10.6,
+   "cleaned_ai_pct_of_nonslop": 59.0,
+   "median_created": "2026-02-27"
+  },
+  "G09": {
+   "label": "MCP ecosystem & tool bridges",
+   "n": 753,
+   "median_stars": 6,
+   "ge10k": 14,
+   "active_pct": 68.0,
+   "dormant_arch_pct": 17.7,
+   "cleaned_ai_pct_of_nonslop": 39.0,
+   "median_created": "2025-12-29"
+  },
+  "G11": {
+   "label": "Sandboxing, security & guardrails",
+   "n": 750,
+   "median_stars": 20.5,
+   "ge10k": 30,
+   "active_pct": 83.6,
+   "dormant_arch_pct": 3.7,
+   "cleaned_ai_pct_of_nonslop": 46.1,
+   "median_created": "2026-03-05"
+  },
+  "G15": {
+   "label": "Computer-use, browser & device automation",
+   "n": 647,
+   "median_stars": 49,
+   "ge10k": 33,
+   "active_pct": 68.0,
+   "dormant_arch_pct": 12.1,
+   "cleaned_ai_pct_of_nonslop": 47.6,
+   "median_created": "2026-01-31"
+  },
+  "G04": {
+   "label": "Skills, spec-driven dev & context engineering",
+   "n": 612,
+   "median_stars": 28.5,
+   "ge10k": 39,
+   "active_pct": 85.0,
+   "dormant_arch_pct": 2.6,
+   "cleaned_ai_pct_of_nonslop": 75.3,
+   "median_created": "2026-03-11"
+  },
+  "G20": {
+   "label": "Vertical & domain agents",
+   "n": 610,
+   "median_stars": 3.0,
+   "ge10k": 22,
+   "active_pct": 70.2,
+   "dormant_arch_pct": 16.2,
+   "cleaned_ai_pct_of_nonslop": 70.8,
+   "median_created": "2026-03-21"
+  },
+  "G14": {
+   "label": "Knowledge-work & content agents",
+   "n": 546,
+   "median_stars": 29.0,
+   "ge10k": 32,
+   "active_pct": 72.7,
+   "dormant_arch_pct": 11.0,
+   "cleaned_ai_pct_of_nonslop": 63.6,
+   "median_created": "2026-03-07"
+  },
+  "G18": {
+   "label": "Deploy, cloud infra & databases",
+   "n": 521,
+   "median_stars": 47,
+   "ge10k": 57,
+   "active_pct": 77.7,
+   "dormant_arch_pct": 10.9,
+   "cleaned_ai_pct_of_nonslop": 30.3,
+   "median_created": "2025-07-27"
+  },
+  "G03": {
+   "label": "Multi-agent orchestration & fleets",
+   "n": 461,
+   "median_stars": 16,
+   "ge10k": 15,
+   "active_pct": 79.6,
+   "dormant_arch_pct": 5.6,
+   "cleaned_ai_pct_of_nonslop": 65.9,
+   "median_created": "2026-02-27"
+  },
+  "G08": {
+   "label": "QA, review & fix loops",
+   "n": 423,
+   "median_stars": 11,
+   "ge10k": 5,
+   "active_pct": 71.9,
+   "dormant_arch_pct": 14.4,
+   "cleaned_ai_pct_of_nonslop": 53.2,
+   "median_created": "2026-03-10"
+  },
+  "G10": {
+   "label": "LLM gateways, routing & cost control",
+   "n": 417,
+   "median_stars": 23,
+   "ge10k": 22,
+   "active_pct": 74.6,
+   "dormant_arch_pct": 11.8,
+   "cleaned_ai_pct_of_nonslop": 44.1,
+   "median_created": "2026-02-17"
+  },
+  "G06": {
+   "label": "Code intelligence & repo analysis",
+   "n": 383,
+   "median_stars": 30,
+   "ge10k": 22,
+   "active_pct": 77.3,
+   "dormant_arch_pct": 8.9,
+   "cleaned_ai_pct_of_nonslop": 41.5,
+   "median_created": "2026-02-23"
+  },
+  "G24": {
+   "label": "IDE, editor & terminal integration",
+   "n": 314,
+   "median_stars": 57.0,
+   "ge10k": 15,
+   "active_pct": 79.6,
+   "dormant_arch_pct": 8.0,
+   "cleaned_ai_pct_of_nonslop": 42.7,
+   "median_created": "2026-03-06"
+  },
+  "G02": {
+   "label": "Agent frameworks & SDKs",
+   "n": 301,
+   "median_stars": 12,
+   "ge10k": 9,
+   "active_pct": 76.1,
+   "dormant_arch_pct": 10.0,
+   "cleaned_ai_pct_of_nonslop": 61.8,
+   "median_created": "2026-02-28"
+  },
+  "G17": {
+   "label": "Eval, benchmarks & agent research",
+   "n": 291,
+   "median_stars": 119,
+   "ge10k": 9,
+   "active_pct": 55.0,
+   "dormant_arch_pct": 23.7,
+   "cleaned_ai_pct_of_nonslop": 26.8,
+   "median_created": "2025-08-18"
+  },
+  "G23": {
+   "label": "Tutorials, curricula & catalogs",
+   "n": 276,
+   "median_stars": 94.5,
+   "ge10k": 38,
+   "active_pct": 67.0,
+   "dormant_arch_pct": 17.0,
+   "cleaned_ai_pct_of_nonslop": 47.1,
+   "median_created": "2025-08-17"
+  },
+  "G05": {
+   "label": "Harness session tooling & context management",
+   "n": 257,
+   "median_stars": 25,
+   "ge10k": 8,
+   "active_pct": 81.3,
+   "dormant_arch_pct": 1.2,
+   "cleaned_ai_pct_of_nonslop": 58.0,
+   "median_created": "2026-03-20"
+  },
+  "G25": {
+   "label": "App builders & workflow canvases",
+   "n": 164,
+   "median_stars": 56.0,
+   "ge10k": 21,
+   "active_pct": 67.1,
+   "dormant_arch_pct": 17.1,
+   "cleaned_ai_pct_of_nonslop": 50.6,
+   "median_created": "2025-09-05"
+  },
+  "G22": {
+   "label": "Agent payments, identity & discovery",
+   "n": 138,
+   "median_stars": 6.0,
+   "ge10k": 2,
+   "active_pct": 73.9,
+   "dormant_arch_pct": 9.4,
+   "cleaned_ai_pct_of_nonslop": 62.3,
+   "median_created": "2026-03-12"
+  },
+  "G07": {
+   "label": "Agent-aware VCS & worktree parallelism",
+   "n": 131,
+   "median_stars": 31,
+   "ge10k": 5,
+   "active_pct": 84.0,
+   "dormant_arch_pct": 3.8,
+   "cleaned_ai_pct_of_nonslop": 55.0,
+   "median_created": "2026-02-22"
+  },
+  "G12": {
+   "label": "Observability & endpoint monitoring",
+   "n": 117,
+   "median_stars": 54,
+   "ge10k": 9,
+   "active_pct": 85.5,
+   "dormant_arch_pct": 1.7,
+   "cleaned_ai_pct_of_nonslop": 40.2,
+   "median_created": "2026-02-08"
+  }
+ },
+ "noise_bin": {
+  "n": 5411,
+  "pct_of_nonslop": 28.8,
+  "ge10k": 293,
+  "core_adjacent_pct": 85.7,
+  "top_by_stars": [
+   [
+    "obra/superpowers",
+    242371
+   ],
+   [
+    "nousresearch/hermes-agent",
+    206397
+   ],
+   [
+    "significant-gravitas/autogpt",
+    185217
+   ],
+   [
+    "multica-ai/andrej-karpathy-skills",
+    185201
+   ],
+   [
+    "ollama/ollama",
+    175195
+   ],
+   [
+    "f/prompts.chat",
+    164568
+   ],
+   [
+    "mattpocock/skills",
+    151651
+   ],
+   [
+    "langgenius/dify",
+    147134
+   ],
+   [
+    "langchain-ai/langchain",
+    140589
+   ],
+   [
+    "anthropics/claude-code",
+    135135
+   ]
+  ]
+ },
+ "micro": {
+  "c154": {
+   "label": "Code-graph indexing & search",
+   "n": 281,
+   "ge10k": 12,
+   "median_stars": 25,
+   "median_created": "2026-02-25",
+   "top": [
+    [
+     "safishamsi/graphify",
+     74823
+    ],
+    [
+     "burntsushi/ripgrep",
+     65623
+    ],
+    [
+     "colbymchenry/codegraph",
+     56359
+    ]
+   ]
+  },
+  "c36": {
+   "label": "Agent payment & billing rails",
+   "n": 106,
+   "ge10k": 2,
+   "median_stars": 6.0,
+   "median_created": "2026-03-12",
+   "top": [
+    [
+     "juspay/hyperswitch",
+     43168
+    ],
+    [
+     "insforge/insforge",
+     12013
+    ],
+    [
+     "crestalnetwork/intentkit",
+     6504
+    ]
+   ]
+  },
+  "c61": {
+   "label": "Security scanners & pentest agents",
+   "n": 311,
+   "ge10k": 12,
+   "median_stars": 12,
+   "median_created": "2026-03-17",
+   "top": [
+    [
+     "keygraphhq/shannon",
+     45285
+    ],
+    [
+     "lissy93/web-check",
+     34022
+    ],
+    [
+     "projectdiscovery/nuclei",
+     29407
+    ]
+   ]
+  },
+  "c80": {
+   "label": "Evolutionary code & prompt optimizers",
+   "n": 27,
+   "ge10k": 1,
+   "median_stars": 361,
+   "median_created": "2026-03-06",
+   "top": [
+    [
+     "karpathy/autoresearch",
+     89286
+    ],
+    [
+     "algorithmicsuperintelligence/openevolve",
+     6630
+    ],
+    [
+     "gepa-ai/gepa",
+     5449
+    ]
+   ]
+  },
+  "c141": {
+   "label": "Rust agent runtimes & CLIs",
+   "n": 503,
+   "ge10k": 10,
+   "median_stars": 5,
+   "median_created": "2026-03-15",
+   "top": [
+    [
+     "aaif-goose/goose",
+     50478
+    ],
+    [
+     "hmbown/codewhale",
+     39221
+    ],
+    [
+     "zeroclaw-labs/zeroclaw",
+     32103
+    ]
+   ]
+  },
+  "c2": {
+   "label": "Go agent runtimes & TUI frameworks",
+   "n": 403,
+   "ge10k": 9,
+   "median_stars": 5,
+   "median_created": "2026-03-13",
+   "top": [
+    [
+     "charmbracelet/bubbletea",
+     43464
+    ],
+    [
+     "sipeed/picoclaw",
+     29533
+    ],
+    [
+     "go-kratos/kratos",
+     25764
+    ]
+   ]
+  },
+  "c103": {
+   "label": "Persistent agent memory layers",
+   "n": 358,
+   "ge10k": 16,
+   "median_stars": 20.0,
+   "median_created": "2026-03-16",
+   "top": [
+    [
+     "thedotmack/claude-mem",
+     85212
+    ],
+    [
+     "mem0ai/mem0",
+     59773
+    ],
+    [
+     "mempalace/mempalace",
+     56774
+    ]
+   ]
+  },
+  "c42": {
+   "label": "OpenClaw agent ecosystem",
+   "n": 91,
+   "ge10k": 3,
+   "median_stars": 93,
+   "median_created": "2026-03-09",
+   "top": [
+    [
+     "1panel-dev/1panel",
+     36037
+    ],
+    [
+     "hesamsheikh/awesome-openclaw-usecases",
+     31453
+    ],
+    [
+     "fathah/hermes-desktop",
+     12917
+    ]
+   ]
+  },
+  "c166": {
+   "label": "Terminal multiplexers hosting agent panes",
+   "n": 162,
+   "ge10k": 8,
+   "median_stars": 34.5,
+   "median_created": "2026-03-21",
+   "top": [
+    [
+     "textualize/textual",
+     36440
+    ],
+    [
+     "zellij-org/zellij",
+     33994
+    ],
+    [
+     "swordfish90/cool-retro-term",
+     25738
+    ]
+   ]
+  },
+  "c155": {
+   "label": "Session-log parsers & replay viewers",
+   "n": 138,
+   "ge10k": 1,
+   "median_stars": 15.0,
+   "median_created": "2026-03-27",
+   "top": [
+    [
+     "atuinsh/atuin",
+     30403
+    ],
+    [
+     "getagentseal/codeburn",
+     8348
+    ],
+    [
+     "junhoyeo/tokscale",
+     4043
+    ]
+   ]
+  },
+  "c90": {
+   "label": "ML frameworks & LLM inference engines",
+   "n": 643,
+   "ge10k": 93,
+   "median_stars": 276,
+   "median_created": "2025-07-03",
+   "top": [
+    [
+     "tensorflow/tensorflow",
+     195997
+    ],
+    [
+     "huggingface/transformers",
+     162054
+    ],
+    [
+     "ggml-org/llama.cpp",
+     118807
+    ]
+   ]
+  },
+  "c109": {
+   "label": "DIY terminal coding-agent CLIs",
+   "n": 142,
+   "ge10k": 2,
+   "median_stars": 15.5,
+   "median_created": "2026-04-07",
+   "top": [
+    [
+     "fastapi/typer",
+     19669
+    ],
+    [
+     "ther1d/shell_gpt",
+     12142
+    ],
+    [
+     "xonsh/xonsh",
+     9538
+    ]
+   ]
+  },
+  "c119": {
+   "label": "Coding-CLI clones & provider switchers",
+   "n": 36,
+   "ge10k": 4,
+   "median_stars": 18.0,
+   "median_created": "2026-04-24",
+   "top": [
+    [
+     "anomalyco/opencode",
+     180878
+    ],
+    [
+     "gitlawb/openclaude",
+     29590
+    ],
+    [
+     "openai/codex-plugin-cc",
+     21914
+    ]
+   ]
+  },
+  "c172": {
+   "label": "Claude Code plugin marketplaces",
+   "n": 52,
+   "ge10k": 3,
+   "median_stars": 6.0,
+   "median_created": "2026-03-12",
+   "top": [
+    [
+     "wshobson/agents",
+     37370
+    ],
+    [
+     "anthropics/claude-plugins-official",
+     31348
+    ],
+    [
+     "jeffallan/claude-skills",
+     10326
+    ]
+   ]
+  },
+  "c41": {
+   "label": "Automated program repair research",
+   "n": 74,
+   "ge10k": 0,
+   "median_stars": 30.5,
+   "median_created": "2024-03-18",
+   "top": [
+    [
+     "openautocoder/agentless",
+     2075
+    ],
+    [
+     "facebookresearch/swe-rl",
+     704
+    ],
+    [
+     "fuzzanything/promptfuzz",
+     339
+    ]
+   ]
+  },
+  "c46": {
+   "label": "Docker-sandboxed coding agents",
+   "n": 89,
+   "ge10k": 3,
+   "median_stars": 27,
+   "median_created": "2026-02-16",
+   "top": [
+    [
+     "kilo-org/kilocode",
+     25222
+    ],
+    [
+     "googlecontainertools/distroless",
+     22784
+    ],
+    [
+     "stitionai/devika",
+     19525
+    ]
+   ]
+  },
+  "c84": {
+   "label": "MicroVM & container isolation runtimes",
+   "n": 113,
+   "ge10k": 8,
+   "median_stars": 74,
+   "median_created": "2026-02-02",
+   "top": [
+    [
+     "apple/container",
+     45317
+    ],
+    [
+     "firecracker-microvm/firecracker",
+     35229
+    ],
+    [
+     "abiosoft/colima",
+     29659
+    ]
+   ]
+  },
+  "c165": {
+   "label": "Diff viewers & commit-message generators",
+   "n": 19,
+   "ge10k": 1,
+   "median_stars": 285,
+   "median_created": "2025-11-17",
+   "top": [
+    [
+     "dandavison/delta",
+     31297
+    ],
+    [
+     "kpdecker/jsdiff",
+     9170
+    ],
+    [
+     "nutlope/aicommits",
+     9034
+    ]
+   ]
+  }
+ },
+ "problem": {
+  "n_clusters": 120,
+  "noise": 6055,
+  "noise_pct": 32.2,
+  "top20": [
+   {
+    "id": "p111",
+    "n": 790,
+    "label": "Agents lose all memory between sessions"
+   },
+   {
+    "id": "p0",
+    "n": 685,
+    "label": "MCP server building and discovery burden"
+   },
+   {
+    "id": "p45",
+    "n": 644,
+    "label": "Running models on own hardware is hard"
+   },
+   {
+    "id": "p112",
+    "n": 407,
+    "label": "AI coding skips specs and quality gates"
+   },
+   {
+    "id": "p7",
+    "n": 339,
+    "label": "Image/video production is slow, expert-bound"
+   },
+   {
+    "id": "p94",
+    "n": 324,
+    "label": "Agents rediscover codebases via wasteful grep"
+   },
+   {
+    "id": "p95",
+    "n": 302,
+    "label": "Production agent infrastructure rebuilt per project"
+   },
+   {
+    "id": "p115",
+    "n": 288,
+    "label": "Parallel agent runs collide without isolation"
+   },
+   {
+    "id": "p58",
+    "n": 271,
+    "label": "Agent skills lack packaging and distribution"
+   },
+   {
+    "id": "p97",
+    "n": 268,
+    "label": "Executing untrusted agent code endangers hosts"
+   },
+   {
+    "id": "p117",
+    "n": 257,
+    "label": "Claude Code locked to Anthropic backends"
+   },
+   {
+    "id": "p84",
+    "n": 254,
+    "label": "Manual penetration testing doesn't scale"
+   },
+   {
+    "id": "p4",
+    "n": 246,
+    "label": "Quality voice AI locked behind proprietary APIs"
+   },
+   {
+    "id": "p35",
+    "n": 223,
+    "label": "Agents need real authenticated browser control"
+   },
+   {
+    "id": "p46",
+    "n": 211,
+    "label": "ML training pipelines fragmented and opaque"
+   },
+   {
+    "id": "p76",
+    "n": 198,
+    "label": "Naive RAG loses structure and accuracy"
+   },
+   {
+    "id": "p42",
+    "n": 196,
+    "label": "Multi-provider LLM usage is unmanageable"
+   },
+   {
+    "id": "p63",
+    "n": 191,
+    "label": "Investment research and trading are manual"
+   },
+   {
+    "id": "p9",
+    "n": 184,
+    "label": "Agents lack safe structured database access"
+   },
+   {
+    "id": "p87",
+    "n": 182,
+    "label": "Business SaaS is closed and agent-unready"
+   }
+  ],
+  "postdeploy": {
+   "p84": {
+    "n": 254,
+    "label": "Manual penetration testing doesn't scale"
+   },
+   "p83": {
+    "n": 75,
+    "label": "Incident triage and root-cause is manual"
+   },
+   "p90": {
+    "n": 65,
+    "label": "Production LLM apps are black boxes"
+   },
+   "p82": {
+    "n": 55,
+    "label": "Agents can't query production observability data"
+   },
+   "p65": {
+    "n": 28,
+    "label": "SEO auditing is manual, blind to AI engines"
+   }
+  },
+  "postdeploy_total": 477,
+  "self_eval": {
+   "p40": {
+    "n": 55,
+    "label": "LLM evaluation is ad hoc, irreproducible"
+   },
+   "p43": {
+    "n": 113,
+    "label": "Agent benchmarks don't reflect real environments"
+   },
+   "p44": {
+    "n": 27,
+    "label": "SWE-bench is saturated and short-horizon"
+   }
+  },
+  "vendor_econ": {
+   "p117": {
+    "n": 257,
+    "label": "Claude Code locked to Anthropic backends"
+   },
+   "p93": {
+    "n": 84,
+    "label": "Coding-agent CLIs lock users to one vendor"
+   },
+   "p32": {
+    "n": 89,
+    "label": "AI coding quotas are fragmented and opaque"
+   },
+   "p42": {
+    "n": 196,
+    "label": "Multi-provider LLM usage is unmanageable"
+   }
+  }
+ },
+ "xlens": {
+  "problem_side": {
+   "p95": {
+    "n": 302,
+    "frag": 0.85,
+    "n80": 16,
+    "top_partner": "c141",
+    "top_share": 15.1,
+    "label": "Production agent infrastructure rebuilt per project"
+   },
+   "p87": {
+    "n": 182,
+    "frag": 0.88,
+    "n80": 26,
+    "top_partner": "c34",
+    "top_share": 11.7,
+    "label": "Business SaaS is closed and agent-unready"
+   },
+   "p104": {
+    "n": 162,
+    "frag": 0.83,
+    "n80": 11,
+    "top_partner": "c128",
+    "top_share": 17.4,
+    "label": "Effective agent personas are handcrafted repeatedly"
+   },
+   "p111": {
+    "n": 790,
+    "frag": 0.47,
+    "n80": 12,
+    "top_partner": "c103",
+    "top_share": 53.5,
+    "label": "Agents lose all memory between sessions"
+   },
+   "p0": {
+    "n": 685,
+    "frag": 0.55,
+    "n80": 6,
+    "top_partner": "c55",
+    "top_share": 44.9,
+    "label": "MCP server building and discovery burden"
+   },
+   "p112": {
+    "n": 407,
+    "frag": 0.61,
+    "n80": 16,
+    "top_partner": "c170",
+    "top_share": 39.4,
+    "label": "AI coding skips specs and quality gates"
+   },
+   "p115": {
+    "n": 288,
+    "frag": 0.77,
+    "n80": 8,
+    "top_partner": "c166",
+    "top_share": 22.9,
+    "label": "Parallel agent runs collide without isolation"
+   },
+   "p101": {
+    "n": 119,
+    "frag": 0.78,
+    "n80": 15,
+    "top_partner": "c107",
+    "top_share": 21.7,
+    "label": "Chat frontends are vendor-locked or hand-built"
+   }
+  },
+  "capability_side": {
+   "c141": {
+    "n": 503,
+    "frag": 0.8,
+    "n80": 19,
+    "top_partner": "p22",
+    "top_share": 19.5,
+    "label": "Rust agent runtimes & CLIs"
+   },
+   "c2": {
+    "n": 403,
+    "frag": 0.81,
+    "n80": 22,
+    "top_partner": "p26",
+    "top_share": 18.6,
+    "label": "Go agent runtimes & TUI frameworks"
+   },
+   "c105": {
+    "n": 162,
+    "frag": 0.79,
+    "n80": 9,
+    "top_partner": "p30",
+    "top_share": 21.1,
+    "label": "LLM/agent tutorials & curricula"
+   },
+   "c139": {
+    "n": 87,
+    "frag": 0.8,
+    "n80": 17,
+    "top_partner": "p105",
+    "top_share": 20.4,
+    "label": "LangGraph multi-agent graph workflows"
+   },
+   "c109": {
+    "n": 142,
+    "frag": 0.77,
+    "n80": 9,
+    "top_partner": "p108",
+    "top_share": 22.5,
+    "label": "DIY terminal coding-agent CLIs"
+   }
+  }
+ },
+ "language": {
+  "top12": [
+   [
+    "Python",
+    6784
+   ],
+   [
+    "TypeScript",
+    3260
+   ],
+   [
+    "Go",
+    2700
+   ],
+   [
+    "Rust",
+    2681
+   ],
+   [
+    "none",
+    1153
+   ],
+   [
+    "JavaScript",
+    1007
+   ],
+   [
+    "Shell",
+    598
+   ],
+   [
+    "HTML",
+    453
+   ],
+   [
+    "Java",
+    381
+   ],
+   [
+    "Jupyter Notebook",
+    308
+   ],
+   [
+    "C++",
+    144
+   ],
+   [
+    "Swift",
+    141
+   ]
+  ],
+  "share_by_created_year": {
+   "2021": {
+    "n_with_lang": 159,
+    "Python": 37.1,
+    "TypeScript": 12.6,
+    "JavaScript": 3.8,
+    "Go": 17.6,
+    "Rust": 10.1,
+    "Java": 1.9,
+    "C++": 1.3,
+    "HTML": 1.9
+   },
+   "2022": {
+    "n_with_lang": 263,
+    "Python": 40.3,
+    "TypeScript": 9.5,
+    "JavaScript": 3.4,
+    "Go": 12.9,
+    "Rust": 9.9,
+    "Java": 1.9,
+    "C++": 3.4,
+    "HTML": 3.0
+   },
+   "2023": {
+    "n_with_lang": 986,
+    "Python": 50.3,
+    "TypeScript": 13.1,
+    "JavaScript": 2.6,
+    "Go": 8.2,
+    "Rust": 8.7,
+    "Java": 1.7,
+    "C++": 1.6,
+    "HTML": 1.4
+   },
+   "2024": {
+    "n_with_lang": 1286,
+    "Python": 48.4,
+    "TypeScript": 14.8,
+    "JavaScript": 3.1,
+    "Go": 9.9,
+    "Rust": 8.1,
+    "Java": 1.3,
+    "C++": 0.7,
+    "HTML": 1.0
+   },
+   "2025": {
+    "n_with_lang": 4384,
+    "Python": 38.3,
+    "TypeScript": 17.4,
+    "JavaScript": 3.8,
+    "Go": 14.8,
+    "Rust": 12.5,
+    "Java": 2.6,
+    "C++": 0.5,
+    "HTML": 1.3
+   },
+   "2026": {
+    "n_with_lang": 11553,
+    "Python": 31.3,
+    "TypeScript": 17.8,
+    "JavaScript": 6.3,
+    "Go": 14.7,
+    "Rust": 16.1,
+    "Java": 1.7,
+    "C++": 0.5,
+    "HTML": 3.1
+   }
+  },
+  "g01_mix": [
+   [
+    "Rust",
+    524
+   ],
+   [
+    "Go",
+    427
+   ],
+   [
+    "TypeScript",
+    137
+   ],
+   [
+    "Python",
+    88
+   ],
+   [
+    "JavaScript",
+    18
+   ],
+   [
+    "Shell",
+    14
+   ],
+   [
+    "none",
+    11
+   ],
+   [
+    "HTML",
+    5
+   ]
+  ]
+ },
+ "liveness_by_created_year": {
+  "2021": {
+   "n": 167,
+   "active_pct": 62.9,
+   "dormant_arch_pct": 30.5
+  },
+  "2022": {
+   "n": 272,
+   "active_pct": 64.7,
+   "dormant_arch_pct": 25.7
+  },
+  "2023": {
+   "n": 1048,
+   "active_pct": 42.6,
+   "dormant_arch_pct": 43.3
+  },
+  "2024": {
+   "n": 1346,
+   "active_pct": 47.0,
+   "dormant_arch_pct": 35.7
+  },
+  "2025": {
+   "n": 4586,
+   "active_pct": 54.5,
+   "dormant_arch_pct": 26.2
+  },
+  "2026": {
+   "n": 12333,
+   "active_pct": 85.9,
+   "dormant_arch_pct": 0.4
+  }
+ },
+ "dormancy_by_group_top": [
+  [
+   "G21",
+   26.1,
+   1166
+  ],
+  [
+   "G17",
+   23.7,
+   291
+  ],
+  [
+   "SLOP",
+   19.3,
+   1608
+  ],
+  [
+   "G09",
+   17.7,
+   753
+  ],
+  [
+   "G25",
+   17.1,
+   164
+  ],
+  [
+   "G23",
+   17.0,
+   276
+  ]
+ ],
+ "dormancy_by_group_bottom": [
+  [
+   "G03",
+   5.6,
+   461
+  ],
+  [
+   "G07",
+   3.8,
+   131
+  ],
+  [
+   "G11",
+   3.7,
+   750
+  ],
+  [
+   "G04",
+   2.6,
+   612
+  ],
+  [
+   "G12",
+   1.7,
+   117
+  ],
+  [
+   "G05",
+   1.2,
+   257
+  ]
+ ],
+ "mcp": {
+  "posture_mcp_server": 2364,
+  "share_of_nonslop_pct": 12.6,
+  "g09_n": 753,
+  "p0_n": 685,
+  "created_by_quarter": {
+   "2024Q1": 1,
+   "2024Q2": 6,
+   "2024Q3": 4,
+   "2024Q4": 51,
+   "2025Q1": 169,
+   "2025Q2": 273,
+   "2025Q3": 181,
+   "2025Q4": 168,
+   "2026Q1": 598,
+   "2026Q2": 828,
+   "2026Q3": 55
+  },
+  "median_stars": 9.0
+ },
+ "mentions": {
+  "claude_code": 3694,
+  "claude_any": 4896,
+  "mcp": 5594,
+  "copilot": 499,
+  "cursor": 992,
+  "codex": 2085,
+  "gemini": 1115,
+  "openclaw": 330,
+  "langchain_langgraph": 1059,
+  "deepseek": 571,
+  "qwen": 465
+ },
+ "stars": {
+  "total": 47866674,
+  "median": 16,
+  "lt10_pct": 45.4,
+  "top1pct_share_pct": 35.3,
+  "ge10k_count": 1173,
+  "by_band": [
+   {
+    "band": "0\u20131",
+    "n": 5308,
+    "n_pct": 26.0,
+    "stars_pct": 0.0
+   },
+   {
+    "band": "2\u20139",
+    "n": 3944,
+    "n_pct": 19.3,
+    "stars_pct": 0.0
+   },
+   {
+    "band": "10\u201349",
+    "n": 3033,
+    "n_pct": 14.9,
+    "stars_pct": 0.2
+   },
+   {
+    "band": "50\u2013199",
+    "n": 2240,
+    "n_pct": 11.0,
+    "stars_pct": 0.5
+   },
+   {
+    "band": "200\u2013999",
+    "n": 2082,
+    "n_pct": 10.2,
+    "stars_pct": 2.1
+   },
+   {
+    "band": "1k\u20139.9k",
+    "n": 2613,
+    "n_pct": 12.8,
+    "stars_pct": 19.5
+   },
+   {
+    "band": "10k+",
+    "n": 1173,
+    "n_pct": 5.8,
+    "stars_pct": 77.7
+   }
+  ]
+ },
+ "license": {
+  "none": 5016,
+  "none_pct": 24.6,
+  "permissive_pct": 63.7,
+  "top6": [
+   [
+    "MIT",
+    8877
+   ],
+   [
+    "none",
+    5016
+   ],
+   [
+    "Apache-2.0",
+    3848
+   ],
+   [
+    "other",
+    1402
+   ],
+   [
+    "AGPL-3.0",
+    522
+   ],
+   [
+    "GPL-3.0",
+    366
+   ]
+  ]
+ },
+ "created_histogram": {
+  "2015": 35,
+  "2016": 59,
+  "2017": 72,
+  "2018": 113,
+  "2019": 138,
+  "2020": 156,
+  "2021": 167,
+  "2022": 272,
+  "2023": 1048,
+  "2024": 1346,
+  "2025": 4586,
+  "2026": 12333
+ },
+ "cleaned_ai_by_posture": {
+  "product": 56.6,
+  "mcp-server": 49.8,
+  "framework": 60.3,
+  "research-artifact": 22.9,
+  "library": 29.6,
+  "template": 70.5,
+  "content-corpus": 44.0
+ },
+ "extras": {
+  "single_source_provenance_pct": 75.2,
+  "created_last_12mo": 14890,
+  "created_last_12mo_pct": 73.0,
+  "created_since_2024_pct": 89.6,
+  "mcp_posture_dormant_arch_pct": 8.4,
+  "top10_stars_overall": [
+   [
+    "sindresorhus/awesome",
+    480188
+   ],
+   [
+    "openclaw/openclaw",
+    381160
+   ],
+   [
+    "obra/superpowers",
+    242371
+   ],
+   [
+    "affaan-m/ecc",
+    223994
+   ],
+   [
+    "nousresearch/hermes-agent",
+    206397
+   ],
+   [
+    "tensorflow/tensorflow",
+    195997
+   ],
+   [
+    "n8n-io/n8n",
+    194683
+   ],
+   [
+    "[slop-gated repo \u2014 name redacted per the naming ruling (memo section G)]",
+    194477
+   ],
+   [
+    "significant-gravitas/autogpt",
+    185217
+   ],
+   [
+    "multica-ai/andrej-karpathy-skills",
+    185201
+   ]
+  ],
+  "slop_ge10k_notes": "[redacted \u2014 per-repo triage notes for the 5 >=10k-star slop-gated repos; per-repo judgment text is not published (memo section G)]"
+ },
+ "mortality_decomposition": {
+  "per_cohort_class": {
+   "2021": {
+    "human-built": {
+     "n": 150,
+     "dormant_arch_pct": 32.7
+    },
+    "cleaned-ai": {
+     "n": 11,
+     "dormant_arch_pct": 0.0
+    },
+    "slop": {
+     "n": 6,
+     "dormant_arch_pct": 33.3
+    }
+   },
+   "2022": {
+    "human-built": {
+     "n": 250,
+     "dormant_arch_pct": 27.2
+    },
+    "cleaned-ai": {
+     "n": 17,
+     "dormant_arch_pct": 0.0
+    },
+    "slop": {
+     "n": 5,
+     "dormant_arch_pct": 40.0
+    }
+   },
+   "2023": {
+    "human-built": {
+     "n": 959,
+     "dormant_arch_pct": 44.4
+    },
+    "cleaned-ai": {
+     "n": 56,
+     "dormant_arch_pct": 7.1
+    },
+    "slop": {
+     "n": 33,
+     "dormant_arch_pct": 72.7
+    }
+   },
+   "2024": {
+    "human-built": {
+     "n": 1115,
+     "dormant_arch_pct": 36.3
+    },
+    "cleaned-ai": {
+     "n": 176,
+     "dormant_arch_pct": 20.5
+    },
+    "slop": {
+     "n": 55,
+     "dormant_arch_pct": 72.7
+    }
+   },
+   "2025": {
+    "human-built": {
+     "n": 2449,
+     "dormant_arch_pct": 20.0
+    },
+    "cleaned-ai": {
+     "n": 1794,
+     "dormant_arch_pct": 26.5
+    },
+    "slop": {
+     "n": 343,
+     "dormant_arch_pct": 68.8
+    }
+   }
+  },
+  "mix_2022_pct": {
+   "human-built": 91.9,
+   "cleaned-ai": 6.2,
+   "slop": 1.8
+  },
+  "counterfactual_2025_at_2022_mix_pct": 21.3,
+  "actual_2025_pct": 26.2
+ },
+ "drive_by": {
+  "definition": "entire observed life (last_commit - created) <= 7 days; judged cohorts = created before 2025-10-01",
+  "by_class": {
+   "human-built": {
+    "n": 4966,
+    "drive_by_pct": 5.58
+   },
+   "cleaned-ai": {
+    "n": 1275,
+    "drive_by_pct": 14.67
+   },
+   "slop": {
+    "n": 359,
+    "drive_by_pct": 55.43
+   }
+  },
+  "by_cohort_pct": {
+   "2021": 1.8,
+   "2022": 1.8,
+   "2023": 5.0,
+   "2024": 7.1,
+   "2025": 15.7
+  },
+  "dead_median_life_days_by_cohort": {
+   "2017": 1921.0,
+   "2018": 1861.5,
+   "2019": 1239.0,
+   "2020": 1013,
+   "2021": 782,
+   "2022": 614.0,
+   "2023": 314.5,
+   "2024": 132,
+   "2025": 7,
+   "2026": 3.0
+  },
+  "created_2026_drive_by": {
+   "n": 4024,
+   "still_tagged_active_pct": 76.4
+  }
+ },
+ "license_by_effort": {
+  "overall": {
+   "human-built": 15.5,
+   "cleaned-ai": 26.7,
+   "slop": 64.0
+  },
+  "within_cohort": {
+   "2024": {
+    "human-built": 16.2,
+    "cleaned-ai": 15.9
+   },
+   "2025": {
+    "human-built": 15.9,
+    "cleaned-ai": 25.2
+   },
+   "2026": {
+    "human-built": 17.0,
+    "cleaned-ai": 27.6
+   }
+  },
+  "none_rate_by_year": {
+   "2021": 9.6,
+   "2022": 9.6,
+   "2023": 13.7,
+   "2024": 18.1,
+   "2025": 23.1,
+   "2026": 27.9
+  }
+ },
+ "within_cohort_gaps": {
+  "stars_per_month_median": {
+   "2025": {
+    "human-built": 13.2,
+    "cleaned-ai": 4.7
+   },
+   "2026": {
+    "human-built": 3.6,
+    "cleaned-ai": 2.0
+   }
+  },
+  "made_it_pct_2025": {
+   "human-built": 30.0,
+   "cleaned-ai": 16.1
+  }
+ },
+ "vendor_by_cohort": {
+  "pre-2023": {
+   "n": 1061,
+   "claude_anthropic": 5.5,
+   "codex": 1.8,
+   "cursor": 1.4,
+   "copilot": 1.0,
+   "gemini_google": 2.1,
+   "llama_ollama": 1.0,
+   "cn_models": 0.5,
+   "langchain": 0.3,
+   "any_of_4": 7.4
+  },
+  "2023H1": {
+   "n": 505,
+   "claude_anthropic": 9.7,
+   "codex": 1.4,
+   "cursor": 0.8,
+   "copilot": 1.4,
+   "gemini_google": 5.1,
+   "llama_ollama": 7.9,
+   "cn_models": 2.0,
+   "langchain": 7.3,
+   "any_of_4": 11.3
+  },
+  "2023H2": {
+   "n": 510,
+   "claude_anthropic": 9.2,
+   "codex": 1.2,
+   "cursor": 0.6,
+   "copilot": 2.0,
+   "gemini_google": 4.7,
+   "llama_ollama": 9.0,
+   "cn_models": 3.3,
+   "langchain": 3.5,
+   "any_of_4": 10.4
+  },
+  "2024H1": {
+   "n": 599,
+   "claude_anthropic": 8.7,
+   "codex": 1.3,
+   "cursor": 0.8,
+   "copilot": 1.3,
+   "gemini_google": 4.0,
+   "llama_ollama": 7.7,
+   "cn_models": 3.2,
+   "langchain": 4.2,
+   "any_of_4": 10.2
+  },
+  "2024H2": {
+   "n": 692,
+   "claude_anthropic": 13.2,
+   "codex": 1.2,
+   "cursor": 3.5,
+   "copilot": 0.7,
+   "gemini_google": 3.8,
+   "llama_ollama": 7.5,
+   "cn_models": 2.7,
+   "langchain": 3.5,
+   "any_of_4": 14.5
+  },
+  "2025H1": {
+   "n": 1851,
+   "claude_anthropic": 17.8,
+   "codex": 3.1,
+   "cursor": 5.8,
+   "copilot": 1.6,
+   "gemini_google": 7.7,
+   "llama_ollama": 5.1,
+   "cn_models": 4.5,
+   "langchain": 2.6,
+   "any_of_4": 20.0
+  },
+  "2025H2": {
+   "n": 2392,
+   "claude_anthropic": 32.9,
+   "codex": 10.8,
+   "cursor": 5.6,
+   "copilot": 3.4,
+   "gemini_google": 11.2,
+   "llama_ollama": 4.5,
+   "cn_models": 4.3,
+   "langchain": 1.5,
+   "any_of_4": 34.8
+  },
+  "2026": {
+   "n": 11175,
+   "claude_anthropic": 36.1,
+   "codex": 16.2,
+   "cursor": 6.9,
+   "copilot": 3.1,
+   "gemini_google": 8.0,
+   "llama_ollama": 5.3,
+   "cn_models": 5.5,
+   "langchain": 1.5,
+   "any_of_4": 38.7
+  }
+ },
+ "problem_age": {
+  "baseline_pct_2026": 59.5,
+  "highlights": {
+   "p111": {
+    "label": "Agents lose all memory between sessions",
+    "n": 790,
+    "pct_2026": 78.4,
+    "median_created": "2026-03-19"
+   },
+   "p115": {
+    "label": "Parallel agent runs collide without isolation",
+    "n": 288,
+    "pct_2026": 81.6,
+    "median_created": "2026-03-12"
+   },
+   "p58": {
+    "label": "Agent skills lack packaging and distribution",
+    "n": 271,
+    "pct_2026": 80.8,
+    "median_created": "2026-03-17"
+   },
+   "p112": {
+    "label": "AI coding skips specs and quality gates",
+    "n": 407,
+    "pct_2026": 74.9,
+    "median_created": "2026-03-18"
+   },
+   "p0": {
+    "label": "MCP server building and discovery burden",
+    "n": 685,
+    "pct_2026": 49.1,
+    "median_created": "2025-12-15"
+   },
+   "p45": {
+    "label": "Running models on own hardware is hard",
+    "n": 644,
+    "pct_2026": 50.9,
+    "median_created": "2026-01-11"
+   }
+  },
+  "newest10_n_ge30": {
+   "p23": {
+    "label": "OpenClaw is hard to adopt and operate",
+    "n": 39,
+    "pct_2026": 97.4,
+    "median_created": "2026-03-03"
+   },
+   "p109": {
+    "label": "Unattended agent backlogs need lifecycle control",
+    "n": 45,
+    "pct_2026": 91.1,
+    "median_created": "2026-03-28"
+   },
+   "p96": {
+    "label": "Agent actions lack auditable enforcement",
+    "n": 91,
+    "pct_2026": 89.0,
+    "median_created": "2026-03-25"
+   },
+   "p92": {
+    "label": "Verbose tool output burns agent tokens",
+    "n": 44,
+    "pct_2026": 88.6,
+    "median_created": "2026-03-17"
+   },
+   "p98": {
+    "label": "Single models have review blind spots",
+    "n": 43,
+    "pct_2026": 88.4,
+    "median_created": "2026-04-15"
+   },
+   "p110": {
+    "label": "DeepSeek lacks native agent tooling",
+    "n": 50,
+    "pct_2026": 88.0,
+    "median_created": "2026-05-13"
+   },
+   "p114": {
+    "label": "Multiple agents lack shared team coordination",
+    "n": 41,
+    "pct_2026": 87.8,
+    "median_created": "2026-04-19"
+   },
+   "p33": {
+    "label": "Parallel coding-agent sessions need babysitting",
+    "n": 49,
+    "pct_2026": 87.8,
+    "median_created": "2026-03-28"
+   },
+   "p16": {
+    "label": "Job applying is tedious high-volume work",
+    "n": 37,
+    "pct_2026": 83.8,
+    "median_created": "2026-04-14"
+   },
+   "p25": {
+    "label": "Agentic coding depends on costly frontier models",
+    "n": 47,
+    "pct_2026": 83.0,
+    "median_created": "2026-05-02"
+   }
+  },
+  "oldest10_n_ge30": {
+   "p24": {
+    "label": "Prompt engineering is ad-hoc trial-and-error",
+    "n": 59,
+    "pct_2026": 25.4,
+    "median_created": "2025-02-15"
+   },
+   "p48": {
+    "label": "LLM reasoning is brittle and costly",
+    "n": 53,
+    "pct_2026": 20.8,
+    "median_created": "2025-04-24"
+   },
+   "p40": {
+    "label": "LLM evaluation is ad hoc, irreproducible",
+    "n": 55,
+    "pct_2026": 20.0,
+    "median_created": "2024-04-11"
+   },
+   "p11": {
+    "label": "Hand-writing API clients and mocks",
+    "n": 30,
+    "pct_2026": 20.0,
+    "median_created": "2023-10-25"
+   },
+   "p49": {
+    "label": "RL research lacks shared reusable infrastructure",
+    "n": 146,
+    "pct_2026": 19.2,
+    "median_created": "2024-03-01"
+   },
+   "p53": {
+    "label": "Robot learning fragmented across hardware and sims",
+    "n": 83,
+    "pct_2026": 18.1,
+    "median_created": "2024-10-24"
+   },
+   "p46": {
+    "label": "ML training pipelines fragmented and opaque",
+    "n": 211,
+    "pct_2026": 15.2,
+    "median_created": "2023-06-20"
+   },
+   "p75": {
+    "label": "Embedding search doesn't scale without dedicated infra",
+    "n": 55,
+    "pct_2026": 9.1,
+    "median_created": "2023-05-02"
+   },
+   "p60": {
+    "label": "Fast-moving AI literature is untrackable",
+    "n": 59,
+    "pct_2026": 6.8,
+    "median_created": "2024-02-01"
+   },
+   "p29": {
+    "label": "Automated program repair remains unsolved",
+    "n": 56,
+    "pct_2026": 3.6,
+    "median_created": "2023-01-23"
+   }
+  }
+ },
+ "gap_layer_drift": {
+  "2023": {
+   "n": 1015,
+   "gap_pct": {
+    "none": 64.4,
+    "kernel": 5.5,
+    "orchestration": 14.6,
+    "composition": 5.0,
+    "deploy": 4.7,
+    "qa-fixloop": 4.5,
+    "architecture": 1.7,
+    "assets": 3.9
+   },
+   "layer_pct": {
+    "platform": 26.1,
+    "tools-ai-wields": 34.8,
+    "underlying-ai": 34.6,
+    "deploy": 4.5
+   }
+  },
+  "2024": {
+   "n": 1291,
+   "gap_pct": {
+    "none": 56.9,
+    "kernel": 8.0,
+    "orchestration": 14.6,
+    "composition": 8.0,
+    "deploy": 7.4,
+    "qa-fixloop": 6.7,
+    "architecture": 2.8,
+    "assets": 4.0
+   },
+   "layer_pct": {
+    "platform": 23.2,
+    "tools-ai-wields": 46.9,
+    "underlying-ai": 24.9,
+    "deploy": 4.9
+   }
+  },
+  "2025": {
+   "n": 4243,
+   "gap_pct": {
+    "none": 46.9,
+    "kernel": 18.9,
+    "orchestration": 18.0,
+    "composition": 8.9,
+    "deploy": 7.8,
+    "qa-fixloop": 5.9,
+    "architecture": 4.5,
+    "assets": 2.4
+   },
+   "layer_pct": {
+    "platform": 37.0,
+    "tools-ai-wields": 45.7,
+    "underlying-ai": 13.3,
+    "deploy": 4.0
+   }
+  },
+  "2026": {
+   "n": 11175,
+   "gap_pct": {
+    "none": 30.8,
+    "kernel": 29.3,
+    "orchestration": 24.4,
+    "composition": 11.7,
+    "deploy": 9.1,
+    "qa-fixloop": 9.6,
+    "architecture": 6.6,
+    "assets": 2.6
+   },
+   "layer_pct": {
+    "platform": 50.0,
+    "tools-ai-wields": 35.7,
+    "underlying-ai": 8.6,
+    "deploy": 5.7
+   }
+  },
+  "pre-2023": {
+   "n": 1061,
+   "gap_pct": {
+    "none": 69.3,
+    "kernel": 3.6,
+    "orchestration": 3.9,
+    "composition": 5.3,
+    "deploy": 8.7,
+    "qa-fixloop": 5.7,
+    "architecture": 2.4,
+    "assets": 4.1
+   },
+   "layer_pct": {
+    "platform": 12.4,
+    "tools-ai-wields": 43.0,
+    "underlying-ai": 30.3,
+    "deploy": 14.3
+   }
+  }
+ },
+ "owners": {
+  "n_owners": 16584,
+  "single_repo_owner_pct": 89.9,
+  "single_repo_share_of_corpus_pct": 73.1,
+  "thresholds": {
+   "ge2": {
+    "owners": 1675,
+    "repos": 5484
+   },
+   "ge3": {
+    "owners": 558,
+    "repos": 3250
+   },
+   "ge5": {
+    "owners": 214,
+    "repos": 2129
+   },
+   "ge10": {
+    "owners": 66,
+    "repos": 1204
+   },
+   "ge20": {
+    "owners": 19,
+    "repos": 596
+   }
+  },
+  "tiers": {
+   "1": {
+    "owners": 14909,
+    "repos": 14909,
+    "median_stars": 8,
+    "zero_star_pct": 21.8,
+    "active_pct": 73.7
+   },
+   "2-4": {
+    "owners": 1461,
+    "repos": 3355,
+    "median_stars": 58,
+    "zero_star_pct": 12.0,
+    "active_pct": 72.0
+   },
+   "5-9": {
+    "owners": 148,
+    "repos": 925,
+    "median_stars": 199,
+    "zero_star_pct": 2.6,
+    "active_pct": 67.1
+   },
+   "10+": {
+    "owners": 66,
+    "repos": 1204,
+    "median_stars": 418.0,
+    "zero_star_pct": 4.2,
+    "active_pct": 69.6
+   }
+  },
+  "tiers_ex_top20_median_stars": {
+   "5-9": 199,
+   "10+": 296.5
+  },
+  "factory": {
+   "definition": ">=5 repos created inside a 30-day window (largest such burst per owner)",
+   "all": {
+    "owners": 38,
+    "repos": 306,
+    "mix_pct": {
+     "human-built": 33.0,
+     "cleaned-ai": 52.6,
+     "slop": 14.4
+    },
+    "median_stars": 14.5,
+    "zero_star_pct": 14.1
+   },
+   "ex_known_mega": {
+    "owners": 36,
+    "repos": 267,
+    "mix_pct": {
+     "human-built": 37.1,
+     "cleaned-ai": 59.9,
+     "slop": 3.0
+    },
+    "median_stars": 21,
+    "zero_star_pct": 7.1
+   }
+  },
+  "purity_ge3_pct": {
+   "mixed": 57.9,
+   "pure-human-built": 30.8,
+   "pure-cleaned-ai": 10.6,
+   "pure-slop": 0.7
+  },
+  "slop_plus_500star_owners": 18
+ },
+ "naming": {
+  "claude": {
+   "repos": 579,
+   "pct_corpus": 2.8,
+   "owners": 533,
+   "slop_pct": 7.6
+  },
+  "claude_code": {
+   "repos": 213,
+   "pct_corpus": 1.0,
+   "owners": 200,
+   "slop_pct": 8.0
+  },
+  "codex": {
+   "repos": 109,
+   "pct_corpus": 0.5,
+   "owners": 104,
+   "slop_pct": 6.4
+  },
+  "copilot": {
+   "repos": 81,
+   "pct_corpus": 0.4,
+   "owners": 71,
+   "slop_pct": 23.5
+  },
+  "cursor": {
+   "repos": 35,
+   "pct_corpus": 0.2,
+   "owners": 33,
+   "slop_pct": 14.3
+  },
+  "gemini": {
+   "repos": 38,
+   "pct_corpus": 0.2,
+   "owners": 35,
+   "slop_pct": 7.9
+  },
+  "deepseek": {
+   "repos": 82,
+   "pct_corpus": 0.4,
+   "owners": 72,
+   "slop_pct": 11.0
+  },
+  "qwen": {
+   "repos": 180,
+   "pct_corpus": 0.9,
+   "owners": 163,
+   "slop_pct": 20.6
+  },
+  "mcp": {
+   "repos": 1703,
+   "pct_corpus": 8.4,
+   "owners": 1521,
+   "slop_pct": 9.5
+  }
+ },
+ "idea_commons": {
+  "cards_with_idea_pct": 73.1,
+  "families": {
+   "mcp-tool-surface": {
+    "n": 1085,
+    "median_stars": 28,
+    "top": [
+     [
+      "langflow-ai/langflow",
+      150257
+     ],
+     [
+      "chatgptnextweb/nextchat",
+      88340
+     ],
+     [
+      "modelcontextprotocol/servers",
+      87887
+     ]
+    ]
+   },
+   "sandbox/isolation-tech": {
+    "n": 888,
+    "median_stars": 34.0,
+    "top": [
+     [
+      "firecrawl/firecrawl",
+      142104
+     ],
+     [
+      "bytedance/deer-flow",
+      75622
+     ],
+     [
+      "zylon-ai/private-gpt",
+      57305
+     ]
+    ]
+   },
+   "deterministic/replay": {
+    "n": 701,
+    "median_stars": 7,
+    "top": [
+     [
+      "firecrawl/firecrawl",
+      142104
+     ],
+     [
+      "bytedance/deer-flow",
+      75622
+     ],
+     [
+      "nexu-io/open-design",
+      73339
+     ]
+    ]
+   },
+   "checkpoint/snapshot/resume": {
+    "n": 537,
+    "median_stars": 14,
+    "top": [
+     [
+      "tauricresearch/tradingagents",
+      90009
+     ],
+     [
+      "cline/cline",
+      64132
+     ],
+     [
+      "agno-agi/agno",
+      40920
+     ]
+    ]
+   },
+   "vector/embedding": {
+    "n": 500,
+    "median_stars": 13.0,
+    "top": [
+     [
+      "ruvnet/ruflo",
+      62220
+     ],
+     [
+      "zhayujie/cowagent",
+      45700
+     ],
+     [
+      "abhigyanpatwari/gitnexus",
+      43332
+     ]
+    ]
+   },
+   "worktree": {
+    "n": 384,
+    "median_stars": 23.0,
+    "top": [
+     [
+      "obra/superpowers",
+      242371
+     ],
+     [
+      "gsd-build/get-shit-done",
+      64594
+     ],
+     [
+      "cline/cline",
+      64132
+     ]
+    ]
+   },
+   "multi-cli-adapter/normalization": {
+    "n": 327,
+    "median_stars": 47,
+    "top": [
+     [
+      "google-gemini/gemini-cli",
+      105676
+     ],
+     [
+      "openhands/openhands",
+      78844
+     ],
+     [
+      "bytedance/deer-flow",
+      75622
+     ]
+    ]
+   },
+   "self-heal/retry": {
+    "n": 304,
+    "median_stars": 10.0,
+    "top": [
+     [
+      "panniantong/agent-reach",
+      46926
+     ],
+     [
+      "nrwl/nx",
+      28968
+     ],
+     [
+      "superclaude-org/superclaude_framework",
+      23414
+     ]
+    ]
+   },
+   "diff/patch-based": {
+    "n": 235,
+    "median_stars": 29,
+    "top": [
+     [
+      "aider-ai/aider",
+      46880
+     ],
+     [
+      "dgtlmoon/changedetection.io",
+      32161
+     ],
+     [
+      "firecrawl/open-lovable",
+      27252
+     ]
+    ]
+   },
+   "tree-sitter/AST": {
+    "n": 231,
+    "median_stars": 33,
+    "top": [
+     [
+      "safishamsi/graphify",
+      74823
+     ],
+     [
+      "aider-ai/aider",
+      46880
+     ],
+     [
+      "github/github-mcp-server",
+      31089
+     ]
+    ]
+   },
+   "human-in-the-loop/approval": {
+    "n": 193,
+    "median_stars": 9,
+    "top": [
+     [
+      "mattpocock/skills",
+      151651
+     ],
+     [
+      "cline/cline",
+      64132
+     ],
+     [
+      "mastra-ai/mastra",
+      25628
+     ]
+    ]
+   },
+   "hybrid-retrieval(bm25+RRF)": {
+    "n": 182,
+    "median_stars": 9.0,
+    "top": [
+     [
+      "mem0ai/mem0",
+      59773
+     ],
+     [
+      "rohitg00/agentmemory",
+      24355
+     ],
+     [
+      "promtengineer/localgpt",
+      22209
+     ]
+    ]
+   },
+   "state-machine": {
+    "n": 139,
+    "median_stars": 6,
+    "top": [
+     [
+      "langchain-ai/langgraph",
+      36145
+     ],
+     [
+      "open-gsd/gsd-core",
+      5520
+     ],
+     [
+      "rullerzhou-afk/clawd-on-desk",
+      4946
+     ]
+    ]
+   },
+   "knowledge-graph": {
+    "n": 121,
+    "median_stars": 24,
+    "top": [
+     [
+      "everyinc/compound-engineering-plugin",
+      22332
+     ],
+     [
+      "vxcontrol/pentagi",
+      18040
+     ],
+     [
+      "refactoringhq/tolaria",
+      17805
+     ]
+    ]
+   },
+   "event-sourcing": {
+    "n": 62,
+    "median_stars": 4.0,
+    "top": [
+     [
+      "pingdotgg/t3code",
+      13102
+     ],
+     [
+      "plastic-labs/honcho",
+      5668
+     ],
+     [
+      "atmosphere/atmosphere",
+      3782
+     ]
+    ]
+   }
+  },
+  "cohort_share_pct": {
+   "multi-cli-adapter/normalization": {
+    "pre-2023": 0.6,
+    "2023H1": 0.6,
+    "2023H2": 0.4,
+    "2024H1": 0.2,
+    "2024H2": 0.9,
+    "2025H1": 0.6,
+    "2025H2": 2.4,
+    "2026": 2.2
+   },
+   "deterministic/replay": {
+    "pre-2023": 0.8,
+    "2023H1": 1.6,
+    "2023H2": 1.8,
+    "2024H1": 1.2,
+    "2024H2": 1.0,
+    "2025H1": 1.4,
+    "2025H2": 2.7,
+    "2026": 5.1
+   },
+   "vector/embedding": {
+    "pre-2023": 0.7,
+    "2023H1": 2.6,
+    "2023H2": 1.6,
+    "2024H1": 2.2,
+    "2024H2": 1.9,
+    "2025H1": 2.0,
+    "2025H2": 2.9,
+    "2026": 3.0
+   }
+  }
+ }
+}

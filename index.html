@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The State of Open Source Agentic AI · July 2026</title>
+<meta name="description" content="An interactive map and story of 20,393 open-source agentic-AI repositories, read and classified from their actual code." />
+<link rel="canonical" href="https://stateofagenticai.reiuk.co.uk/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="REIUK" />
+<meta property="og:title" content="The State of Open Source Agentic AI · July 2026" />
+<meta property="og:description" content="An interactive map and story of 20,393 open-source agentic-AI repositories, read and classified from their actual code." />
+<meta property="og:url" content="https://stateofagenticai.reiuk.co.uk/" />
+<meta property="og:image" content="https://stateofagenticai.reiuk.co.uk/docs/hero.png" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="1000" />
+<meta property="og:image:alt" content="The map: 20,393 repositories as a point cloud" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-mode="story">
+
+<svg aria-hidden="true" style="display:none"><defs>
+  <g id="rei-mark" fill="none" stroke="currentColor" stroke-width="20">
+    <path d="M206.5 2V586"/><path d="M4 148L381 525"/><path d="M206.5 10L370 174L4 546"/>
+  </g>
+</defs></svg>
+
+<div id="mapwrap"><canvas id="map" aria-label="Interactive map of 20,393 repositories. Use explore mode to pan, zoom, and inspect points."></canvas></div>
+<div id="mapdim" aria-hidden="true"></div>
+<div id="vignette" aria-hidden="true"></div>
+<div id="tooltip" role="status" aria-hidden="true"></div>
+
+<nav id="rail" aria-label="Story progress"></nav>
+
+<header id="masthead">
+  <a class="marklink" href="https://reiuk.co.uk" target="_blank" rel="noopener" aria-label="REI"><svg class="mark" viewBox="0 0 390 588" aria-hidden="true"><use href="#rei-mark"/></svg></a>
+  <span class="brand">The State of Open&nbsp;Source Agentic&nbsp;AI</span>
+  <span class="brand-sub mono">JULY 2026</span>
+  <span class="flex"></span>
+  <button class="ghost" id="methodBtn">Methodology</button>
+  <button class="ghost" id="modeBtn" aria-pressed="false">Explore the map</button>
+</header>
+
+<main id="story">
+
+  <section class="step hero" data-state="hero" id="s0">
+    <div class="hero-inner">
+      <h1 class="hero-title">The State of Open&nbsp;Source Agentic&nbsp;AI</h1>
+      <p class="hero-meta mono"><span class="count" id="heroCount">0</span>&nbsp;REPOSITORIES
+        <span class="nowrap">· JULY&nbsp;2026</span>
+        <span class="nowrap">· <a class="hero-brand" href="https://reiuk.co.uk"
+        target="_blank" rel="noopener">REIUK</a></span></p>
+      <p class="mobilenote">You're on a small screen; the story reads fine,
+      but the full pan-and-zoom map wants a desktop.</p>
+      <p class="scrollhint mono" aria-hidden="true">SCROLL ↓</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <div id="column">
+
+  <section class="step" data-state="territory" id="s1">
+    <div class="panel">
+      <p class="plate mono">01 · THE TERRITORY</p>
+      <h2>The map has 25 named regions.</h2>
+      <p>We read each repository's README, file tree, and source, and wrote
+      down what it actually builds. Those descriptions were embedded and
+      clustered, so two repositories sit near each other when they <em>do</em>
+      similar things. Twenty-five regions emerged, built from
+      <span class="stat mono">178</span> finer sub-clusters, running from
+      coding-agent harnesses to voice cloning.</p>
+      <p>No taxonomy was imposed; the categories are the ecosystem's own
+      structure.</p>
+      <div id="regions" aria-label="The 25 regions: hover to light one up on the map, click to pin and unfold its sub-clusters"></div>
+      <p class="fine">Hover a region to light it up; click to pin it and unfold
+      its sub-clusters. Hover any point to identify it; click for the full card.
+      <button class="linklike explore-here">Explore this view →</button></p>
+    </div>
+  </section>
+
+  <section class="step" data-state="method" id="s2">
+    <div class="panel">
+      <p class="plate mono">02 · HOW WE GATHERED THIS DATA</p>
+      <h2>Seven gathering passes. Every repository read.</h2>
+      <p>Curated lists, topic and code searches, ecosystem sweeps, dependency
+      and network hops, in seven passes over one territory: coding agents,
+      agent infrastructure, and the tools agents wield.</p>
+      <p>Every repository was then read (README, file tree, one or two source
+      files) and classified by a frontier model.</p>
+      <table class="mtable">
+        <tr><th>data</th><th>notes</th></tr>
+        <tr><td>snapshot</td><td>all metadata as of <b>2026-07-01</b></td></tr>
+        <tr><td>map positions</td><td>2-D projection of a high-dimensional space, so distances distort; neighbors are computed in the full space</td></tr>
+      </table>
+      <p class="fine">Full methodology &amp; dataset notes in the
+      <button class="linklike" id="toAppendix">appendix</button>. Every number
+      on this page regenerates from audited scripts.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="age" id="s3">
+    <div class="panel">
+      <p class="plate mono">03 · ONE YEAR OLD</p>
+      <h2>73% of the territory didn&rsquo;t exist last July.</h2>
+      <p><span class="stat mono">14,890</span> of these repositories were
+      created in the twelve months before our snapshot, and 89.6% since the
+      start of 2024.</p>
+      <figure id="fig-age" class="chart"></figure>
+      <p class="mapnote" id="ageNote">Lit on the map: repositories created
+      since July 2025. Click a bar to light a single year.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="authorship" id="s4">
+    <div class="panel">
+      <p class="plate mono">04 · THE AUTHORSHIP FLIP</p>
+      <h2>Two-thirds of 2026&rsquo;s repos are AI-assisted builds.</h2>
+      <p>We classified each repo's construction from its bones: tree shape,
+      tests, CI, the fingerprints agent workflows leave. In repos created in
+      2023, <span class="stat mono">1 in 20</span> showed AI-assisted
+      construction. In 2026: <span class="stat mono">2 in 3</span>.</p>
+      <figure id="fig-authorship" class="chart"></figure>
+      <p>The boundary is soft and we drew it with an error band, but the
+      direction is not: agentic software is now mostly built <em>with</em> the
+      agents it is built <em>for</em>.</p>
+      <p class="mapnote" id="mapnote">Lit on the map: every repository our read
+      classified as an AI-assisted build.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="lowstar" id="s5">
+    <div class="panel">
+      <p class="plate mono">05 · A LOW-STAR WORLD</p>
+      <h2>Nearly half the map sits under ten stars.</h2>
+      <div class="tiles" id="tiles-lowstar"></div>
+      <p>Stars measure attention, and attention is concentrated: the
+      <span class="stat mono">1,173</span> repositories above 10,000 stars,
+      5.8% of the corpus, hold 77.7% of its 47.9&nbsp;million stars. The
+      median repository has 16. Most writing about this ecosystem covers the
+      starred end; most of what is being attempted sits below ten stars.</p>
+      <figure id="fig-starshare" class="chart"></figure>
+      <p class="mapnote" id="lowstarNote">Lit on the map: repositories under
+      ten stars, 45% of the corpus. Click a band to light it instead.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="harness" id="s7">
+    <div class="panel">
+      <p class="plate mono">06 · THE HARNESS EXPLOSION</p>
+      <h2>1,250 people built their own coding agent.</h2>
+      <div class="tiles" id="tiles-harness"></div>
+      <p>The largest specialized region on the map is the coding-agent harness
+      itself: terminal agents, runtimes, and CLIs. Median star count:
+      <span class="stat mono">6</span>. Building your own coding agent is
+      2026's rite of passage, the way a generation once wrote its own static
+      site generator, except this artifact can rebuild itself.</p>
+      <p class="mapnote">The camera is parked on the harness region; its three
+      big neighborhoods are Rust runtimes (503), Go runtimes (403), and DIY
+      terminal CLIs (142).</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="langs" id="s8">
+    <div class="panel">
+      <p class="plate mono">07 · SYSTEMS LANGUAGES</p>
+      <h2>Rust and Go are eating the agent stack.</h2>
+      <p>Python wrote the model era; it is not writing the harness era. Among
+      repos born in 2026, Rust and Go together pass
+      <span class="stat mono">30%</span>, roughly double their 2023 share,
+      while Python fell from half the field to under a third. Single binaries,
+      fast startup, no dependency hell: the qualities you want in a tool an
+      agent installs a thousand times a day.</p>
+      <figure id="fig-lang" class="chart"></figure>
+      <p class="mapnote">On the map, points are recolored by language:</p>
+      <div class="maplegend" id="langLegend" aria-label="Map color legend: languages"></div>
+    </div>
+  </section>
+
+  <section class="step" data-state="mcp" id="s9">
+    <div class="panel">
+      <p class="plate mono">08 · THE MCP ECONOMY</p>
+      <h2>One in eight real repos is an MCP server.</h2>
+      <p>The Model Context Protocol shipped in November 2024. Twenty months
+      later, <span class="stat mono">2,364</span> repositories here are MCP
+      servers, <span class="stat mono">12.6%</span> of everything real, and
+      last quarter they appeared at nine per day.</p>
+      <figure id="fig-mcp" class="chart"></figure>
+      <p>Much of it is already a ghost town. The median MCP server has
+      <span class="stat mono">9</span> stars, the MCP-server region carries
+      one of the highest dormancy rates of the 25 regions, and MCP vaporware
+      is the largest single genre of slop.</p>
+      <p class="mapnote" id="mcpNote">Lit on the map: every MCP server,
+      threading through every region. Click a bar to light a single quarter's
+      arrivals.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="slop" id="s10">
+    <div class="panel">
+      <p class="plate mono">09 · THE SLOP STRATUM</p>
+      <h2>7.9% of the territory is slop, in 63 genres.</h2>
+      <p><span class="stat mono">1,608</span> repositories make claims their
+      code does not back. We mapped them rather than deleting them, and they
+      sort into genres:</p>
+      <figure id="fig-slop" class="chart"></figure>
+      <p>One caution: our reader over-calls slop on real code hiding behind
+      deceptive READMEs. In a blind audit, roughly
+      <span class="stat mono">40%</span> of sampled slop was real code
+      presented deceptively; treat the label as triage, not a verdict.</p>
+      <p class="mapnote" id="slopNote">Lit on the map: the slop stratum, mapped
+      in its own space and projected in as the violet fringe. Click a genre bar
+      to isolate it.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="bump" id="s11">
+    <div class="panel">
+      <p class="plate mono">10 · THE DECEPTIVE BUMP</p>
+      <h2>Slop falls as stars rise, except in one band.</h2>
+      <p>Between 50 and 199 stars the slop rate nearly doubles: the zone where
+      deceptive presentation buys real credibility.</p>
+      <figure id="fig-bump" class="chart"></figure>
+      <p>At the top of the range sits a “coding-agent” rebrand
+      with a stub source file and <span class="stat mono">194,000</span>
+      stars. Stars are the industry's default quality signal; they can be
+      manufactured at six-figure scale.</p>
+      <p class="mapnote" id="bumpNote">Lit on the map: slop repositories
+      sitting in the 50–199-star band. Click any band to see its
+      slop instead.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="cats" id="s12">
+    <div class="panel">
+      <p class="plate mono">11 · CATEGORIES BEING BORN</p>
+      <h2>Whole regions of this map didn&rsquo;t exist a year ago.</h2>
+      <p>We can timestamp them: the median repository in each of these regions
+      was created in <span class="stat mono">Feb–Mar 2026</span>. Code-graph
+      indexes that let agents stop re-reading codebases. Penetration-testing
+      agents. Worktree managers for running five agents on one repo. Payment
+      rails that let an agent spend money with a budget. And the largest
+      newborn, skills: instruction files agents write for other agents. It is
+      the most AI-built region on the whole map, and the thinnest; much of it
+      is folders of markdown rather than software.</p>
+      <div id="cats" aria-label="Newborn categories: hover to light one on the map, click to pin"></div>
+      <p class="mapnote">All five newborn categories are lit; hover a chip to
+      isolate one.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="vert" id="s13">
+    <div class="panel">
+      <p class="plate mono">12 · THE VERTICAL WAVE</p>
+      <h2>Everyone is attempting &ldquo;agents for X&rdquo;.</h2>
+      <div class="tiles" id="tiles-vert"></div>
+      <p>The vertical-agent future the industry keeps predicting is being
+      attempted across the map: six hundred and ten mostly unnoticed tries at
+      trading desks, tutors, health coaches, legal drafters, trip planners.
+      Median star count: <span class="stat mono">3</span>. Seventy-one percent
+      AI-assisted builds.</p>
+      <p>This is what early adoption looks like: professionals who know what a
+      coding agent is, spinning one up against their own field and publishing
+      the result. What they're building:</p>
+      <div id="vertSubs" aria-label="Vertical-agent sub-categories: hover to light one on the map, click to pin"></div>
+      <p class="mapnote" id="vertNote">The camera is parked on the vertical
+      &amp; domain agents region. Hover a sub-category to isolate it.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="problems" id="s14">
+    <div class="panel">
+      <p class="plate mono">13 · THE PROBLEM LENS</p>
+      <h2>What problems does the ecosystem fixate on?</h2>
+      <p>Every repo also told us <em>why</em> it exists, and the whys cluster
+      differently than the whats. The biggest fixation: <em>agents lose all
+      memory between sessions</em>. <span class="stat mono">790</span>
+      repositories exist to fix that. Read the count with some care: memory
+      systems are also the easiest agentic infrastructure to attempt, the
+      problem is obvious, and the models themselves gravitate to it when asked
+      what to build.</p>
+      <figure id="fig-problems" class="chart"></figure>
+      <p>Then the integration burden, the cost of frontier APIs, and the fact
+      every practitioner already knows: AI writes code and reports it as
+      correct when it isn't. <span class="stat mono">407</span> repositories
+      exist to catch that.</p>
+      <details class="browse" id="probBrowse">
+        <summary>Browse all 120 problem clusters</summary>
+        <div id="probList" aria-label="All problem clusters: hover to light one on the map, click to pin"></div>
+      </details>
+      <p class="mapnote" id="probNote">The map is recolored by problem: each
+      hue is one of 120 shared reasons to build. Click a bar to isolate one.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="xlens" id="s15">
+    <div class="panel">
+      <p class="plate mono">14 · ONE PROBLEM, TWENTY SHAPES</p>
+      <h2>The mechanism space is still speciating.</h2>
+      <p>“Getting an agent to production” is one sharply-felt problem solved
+      by <span class="stat mono">16+</span> unrelated kinds of object:
+      runtimes, k8s operators, fleet platforms, frameworks. Nobody has found
+      the shape yet. Memory, by contrast, is converging on one mechanism
+      family. Here is every problem we measured, most-scattered first:</p>
+      <div id="xlensRows" role="group" aria-label="Problems by mechanism fragmentation: click one to light it on the map, colored by mechanism region"></div>
+      <p>Watching which problems scatter and which converge is watching the
+      ecosystem decide what its products will be. The scatter you see on the
+      map is a fair picture: fragmentation is measured in the full-dimensional
+      space, and the 2-D view spreads these repos out much as the measurement
+      does.</p>
+      <p class="mapnote" id="xlensNote">Lit on the map: the 302
+      production-infrastructure repos, colored by which mechanism region each
+      belongs to: sixteen different answers to one question.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="afterlife" id="s16">
+    <div class="panel">
+      <p class="plate mono">15 · AGENTS IN OPERATIONS</p>
+      <h2>Agents are moving into the operations jobs.</h2>
+      <p>Follow the problem statements past the development loop and the
+      biggest cluster is security: <span class="stat mono">254</span>
+      repositories building agents that run penetration tests. Behind it,
+      agents doing incident root-cause, production observability, and
+      telemetry queries; <span class="stat mono">477</span> repositories in
+      all point agents at software that is already running.</p>
+      <figure id="fig-afterlife" class="chart"></figure>
+      <p>Alongside them, <span class="stat mono">195</span> repositories exist
+      to measure agent performance itself: teams wanting to see how well
+      agents actually do, graded on their own tasks and data rather than
+      public benchmark suites.</p>
+      <p class="mapnote" id="afterNote">Lit on the map: the five post-deploy
+      problem clusters. Click a bar to isolate one.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="agents" id="s17">
+    <div class="panel">
+      <p class="plate mono">16 · THE NAMED AGENTS</p>
+      <h2>Claude Code is named nearly twice as often as Codex.</h2>
+      <p>When a repository's own description names a coding agent, it marks
+      what the project is built for, on, or around. Claude Code appears in
+      <span class="stat mono">3,694</span> descriptions,
+      <span class="stat mono">18%</span> of everything we read and nearly
+      double Codex. Read the smaller counts loosely: further down the table,
+      agents are often named only in passing lists (&ldquo;works with Claude
+      Code, Codex, and others&rdquo;).</p>
+      <table class="mtable" id="agentsTable"></table>
+      <p class="mapnote" id="agentsNote">Lit on the map: every repository whose
+      description names one of these five agents. Click a row to isolate
+      one.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="gravity" id="s18">
+    <div class="panel">
+      <p class="plate mono">17 · ROUTING AROUND LOCK-IN</p>
+      <h2>626 repos exist to undo vendor lock-in.</h2>
+      <p>Four problem clusters share one purpose: opening what vendors have
+      closed. The largest, <span class="stat mono">257</span> repositories,
+      unlocks one harness from its maker's backend; the rest multiplex
+      accounts and quotas, swap providers behind a single interface, and let
+      any model drive any CLI. Together:
+      <span class="stat mono">626</span> repos.</p>
+      <figure id="fig-vendor" class="chart"></figure>
+      <p>Whatever structural lock a vendor ships, the builders treat as a
+      puzzle. These are only the attempts published in the open.</p>
+      <p class="mapnote" id="gravityNote">Lit on the map: the four
+      lock-in/routing problem clusters, 626 repos. Click a bar to isolate
+      one.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="neardup" id="s19">
+    <div class="panel">
+      <p class="plate mono">18 · THE REDUNDANCY CENSUS</p>
+      <h2>549 repositories have a near-duplicate.</h2>
+      <p>Compare every capability description against every other and
+      <span class="stat mono">2.9%</span> of the real corpus has a true
+      near-duplicate somewhere on the map. They are not the junk tail: the
+      median duplicated repo has <span class="stat mono">122</span> stars
+      against 21 for everything else, and 98% of duplicate pairs connect
+      <em>different</em> owners. Independent reinvention, mostly of what is
+      already popular. The truly one-of-a-kind, with no meaningful neighbor
+      anywhere on the map, number just
+      <span class="stat mono">323</span>.</p>
+      <div class="dupchips" id="dupChips" role="group" aria-label="Light the duplicated repos or the one-of-a-kind tail on the map"></div>
+      <figure id="fig-neardup" class="chart"></figure>
+      <p class="mapnote" id="dupNote">Lit on the map: the 549 repositories
+      with a true near-duplicate. Click a region bar to see where the copying
+      concentrates.</p>
+    </div>
+  </section>
+
+  <section class="step" data-state="mortality" id="s20">
+    <div class="panel">
+      <p class="plate mono">19 · MORTALITY</p>
+      <h2>Younger repos should be more alive. Since 2023, they aren't.</h2>
+      <p>A repo born in 2024 has had two fewer years to run out of steam than
+      one born in 2022, so dormancy should fall with every younger cohort. It
+      doesn't. The class of 2023 is <span class="stat mono">43%</span> dormant
+      or archived and 2024 sits at 36%, both far above 2022's 26%.</p>
+      <figure id="fig-mortality" class="chart"></figure>
+      <p>The break coincides with the arrival of AI coding, and the rise is
+      composition: same-age AI-assisted repos go quiet at
+      <span class="stat mono">26.5%</span> against 20% for human-built (hold
+      2022's authorship mix and 2025 would sit at 21%), and slop goes quiet
+      fastest of all: <span class="stat mono">69%</span> of slop created in
+      2025 is already dormant or archived. Human-built 2025 is the
+      lowest-mortality cohort on record. The class of 2026 is not in the
+      chart; our pulse measure needs months of inactivity, a bar no repo
+      created this year can meet yet.</p>
+      <p class="mapnote" id="mortNote">The map is recolored by pulse. Click a
+      bar to light one cohort's dormant &amp; archived repos.</p>
+      <div class="maplegend" id="pulseLegend" aria-label="Map color legend: pulse"></div>
+    </div>
+  </section>
+
+  <section class="step" data-state="driveby" id="s21">
+    <div class="panel">
+      <p class="plate mono">20 · DRIVE-BY REPOS</p>
+      <h2>15.7% of 2025&rsquo;s repositories shipped once and stopped.</h2>
+      <div class="tiles" id="tiles-driveby"></div>
+      <p>A drive-by repo's entire observed life, last commit minus creation,
+      fits inside seven days. Under 2% of repos born through 2022 were
+      drive-bys; the class of 2025 is at
+      <span class="stat mono">15.7%</span>, and its already-dead repos have a
+      median life of <span class="stat mono">7 days</span>, down from 782 for
+      2021's. The rate splits by construction: 5.6% of human-built repos,
+      14.7% of AI-assisted, over half of slop.</p>
+      <figure id="fig-driveby" class="chart"></figure>
+      <p>The class of 2026 is on the same path:
+      <span class="stat mono">4,024</span> of its repos are already
+      drive-bys, a fifth of this entire corpus, and 76% of them still read as
+      <em>active</em>, because a young repo's last commit is always recent.
+      Drive-by share is the leading indicator; the mortality chart above is
+      where it lands.</p>
+      <p class="mapnote" id="drivebyNote">Lit on the map: every judged
+      drive-by repo. Click a bar to light a single cohort.</p>
+    </div>
+  </section>
+
+  <section class="step end" data-state="coda" id="s22">
+    <div class="panel">
+      <p class="plate mono">21 · THE MAP IS YOURS</p>
+      <h2>The territory will keep moving.</h2>
+      <p>Twenty thousand repositories, most younger than a year. Two-thirds
+      machine-built, eight percent slop, whole categories forming within
+      months.</p>
+      <p>A snapshot like this dates quickly, which is why we published the
+      map and not just the story.</p>
+      <p><button class="cta" id="codaExplore">Explore the map</button>
+      <button class="ghost" id="codaMethod">About the data</button></p>
+    </div>
+  </section>
+
+  <section id="appendix" aria-label="About the dataset">
+    <div class="panel">
+      <p class="plate mono">APPENDIX · ABOUT THE DATASET</p>
+      <h2>Methodology.</h2>
+      <p><b>The census.</b> 20,393 GitHub repositories gathered over seven
+      passes (June–July 2026): curated lists, topic and code searches,
+      ecosystem sweeps, dependency and contributor network hops, and recency
+      passes. The lens was deliberate (coding agents, agent infrastructure,
+      tools agents wield, deploy automation, model infrastructure), so this is
+      a census of a <em>chosen territory</em>, not of all AI open source.
+      75.2% of repos entered through a single discovery path. Metadata
+      (stars, dates, language, license) is a 2026-07-01 snapshot.</p>
+      <p><b>The reading.</b> Every repository's README (up to 6k characters),
+      full file tree, and one or two entry-point source files were fetched and
+      read by a frontier model against a fixed rubric, producing a
+      capability description (what it actually does), a problem statement
+      (why it exists), and classifications (construction, layer, kind,
+      liveness). Structural validation is exact: one card per repo, full field
+      coverage, verified model provenance.</p>
+      <p><b>The map.</b> Descriptions were embedded with an open 1024-d model
+      and clustered bottom-up (UMAP → HDBSCAN): 178 capability clusters rolled
+      into 25 named regions, a separate 120-cluster lens over the problem
+      statements, and a separate space for the slop stratum. 2-D positions are
+      projections, so distances distort; the nearest-neighbor lists in each
+      card are computed in the full-dimensional space. The redundancy census
+      calls two repos near-duplicates at cosine ≥ 0.95 in that space, a
+      threshold calibrated against a random-pair baseline and checked by
+      reading sampled pairs; its sensitivity table ships with the chart.</p>
+      <p><b>Known error bars.</b> The slop boundary agrees with a blind
+      second reading 85% of the time and errs one-directionally (real code
+      behind deceptive READMEs gets over-called as slop: about 40% of
+      sampled slop). The human-built ↔ AI-assisted boundary is soft (~67%
+      exact agreement); we treat the two as one stratum wherever it matters
+      and draw the split only with an error band. A small number of star
+      counts (39 flagged) show suspected inflation; one exhibit exceeds
+      190,000 stars.</p>
+      <p><b>Slop is a stratum, not an accusation.</b> "Slop" here means
+      <em>no substantive engineered artifact behind the claims</em>, which
+      sweeps in coursework, prompt collections, and name-squats alongside
+      actual scams. Genre labels distinguish them; individual repositories
+      carry only their genre, never a per-repo judgment.</p>
+      <p><b>Reproducibility.</b> Every number in this story regenerates from
+      audited query scripts over the released data files (the redundancy
+      census additionally needs the embedding matrices); the site's figures
+      are copied from their output and diffed in QA. The public data payload
+      carries only the fields shown here. The site, the data, and the query
+      harness with its committed outputs are published at
+      <a href="https://github.com/reiuk/state-of-agentic-oss" target="_blank"
+      rel="noopener">github.com/reiuk/state-of-agentic-oss</a>.</p>
+      <p class="fine credits"><svg class="mark" viewBox="0 0 390 588"
+      aria-hidden="true"><use href="#rei-mark"/></svg>Data snapshot
+      2026-07-01. Type: Newsreader, Inter, IBM Plex Mono. Built by
+      <a href="https://reiuk.co.uk" target="_blank" rel="noopener">REI</a>.
+      Soli Deo Gloria.</p>
+    </div>
+  </section>
+
+  </div>
+
+</main>
+
+<aside id="detail" aria-label="Repository detail" hidden>
+  <button id="detailClose" class="ghost" aria-label="Close detail panel">×</button>
+  <div id="detailBody"></div>
+</aside>
+
+<div id="exploreUi" hidden>
+  <div id="exploreRail">
+    <section>
+      <h3 class="mono">COLOR BY</h3>
+      <div class="modes" id="colorModes"></div>
+      <div id="legend"></div>
+    </section>
+    <section>
+      <h3 class="mono">FILTERS <span class="hint" id="filterHint"></span></h3>
+      <div class="fgroup"><label class="mono">CONSTRUCTION</label><div class="chips" id="f-eff"></div></div>
+      <div class="fgroup"><label class="mono">KIND</label><div class="chips" id="f-pos"></div></div>
+      <div class="fgroup"><label class="mono">LAYER</label><div class="chips" id="f-lay"></div></div>
+      <div class="fgroup"><label class="mono">PULSE</label><div class="chips" id="f-liv"></div></div>
+      <div class="fgroup"><label class="mono">LANGUAGE</label>
+        <select id="f-lang" class="fselect"><option value="">any language</option></select></div>
+    </section>
+    <section>
+      <h3 class="mono">SEARCH</h3>
+      <input id="search" type="search" placeholder="name or owner…" autocomplete="off" />
+      <label class="deep"><input type="checkbox" id="deepTog" />
+        <span>also search descriptions <span class="hint">(loads ~8&nbsp;MB)</span></span></label>
+      <p class="hint" id="hud"></p>
+      <button class="ghost" id="resetBtn">Reset view &amp; filters</button>
+    </section>
+  </div>
+</div>
+
+<script src="vendor/deck.gl.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

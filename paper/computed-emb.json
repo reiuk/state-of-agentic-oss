@@ -1,0 +1,421 @@
+{
+ "rows": 18785,
+ "T": 0.95,
+ "baseline_random_pairs": {
+  "n": 199984,
+  "seed": 0,
+  "median": 0.615,
+  "p90": 0.743,
+  "p95": 0.777,
+  "p99": 0.833,
+  "p99_9": 0.881,
+  "p99_99": 0.914
+ },
+ "max_sim_percentiles": {
+  "p1": 0.726,
+  "p50": 0.883,
+  "p90": 0.934,
+  "p99": 0.96
+ },
+ "threshold_sensitivity_pct_with_neighbor": {
+  "0.9": 37.06,
+  "0.92": 20.63,
+  "0.93": 12.91,
+  "0.94": 6.9,
+  "0.95": 2.92,
+  "0.96": 0.97,
+  "0.97": 0.25
+ },
+ "near_dup": {
+  "n": 549,
+  "pct": 2.92,
+  "median_stars": 122,
+  "rest_median_stars": 21.0,
+  "edges": 459,
+  "cross_owner_edges": 450,
+  "cross_owner_pct": 98.04,
+  "max_multiplicity": 10
+ },
+ "near_dup_rate_by_class": {
+  "cleaned-ai": 2.9,
+  "human-built": 2.94
+ },
+ "near_dup_rate_by_group_top5": [
+  [
+   10.14,
+   "G23",
+   276
+  ],
+  [
+   8.87,
+   "G10",
+   417
+  ],
+  [
+   7.63,
+   "G07",
+   131
+  ],
+  [
+   7.14,
+   "G14",
+   546
+  ],
+  [
+   6.1,
+   "G25",
+   164
+  ]
+ ],
+ "near_dup_rate_by_group_bottom5": [
+  [
+   1.24,
+   "G15",
+   647
+  ],
+  [
+   1.2,
+   "G21",
+   1166
+  ],
+  [
+   0.69,
+   "G17",
+   291
+  ],
+  [
+   0.33,
+   "G02",
+   301
+  ],
+  [
+   0.0,
+   "G22",
+   138
+  ]
+ ],
+ "giant_component_by_T": {
+  "0.93": {
+   "giant_component": 1406,
+   "components_gt1": 333
+  },
+  "0.94": {
+   "giant_component": 523,
+   "components_gt1": 275
+  },
+  "0.95": {
+   "giant_component": 40,
+   "components_gt1": 177
+  },
+  "0.96": {
+   "giant_component": 10,
+   "components_gt1": 75
+  }
+ },
+ "islands_top12": [
+  {
+   "size": 40,
+   "stars_total": 255333,
+   "stars_median": 205.0,
+   "owners": 40,
+   "label_majority": "noise",
+   "top": [
+    [
+     "anomalyco/opencode",
+     180878
+    ],
+    [
+     "gitlawb/openclaude",
+     29590
+    ],
+    [
+     "superset-sh/superset",
+     12191
+    ]
+   ]
+  },
+  {
+   "size": 18,
+   "stars_total": 53394,
+   "stars_median": 35.5,
+   "owners": 18,
+   "label_majority": "SKILL.md libraries & skill managers",
+   "top": [
+    [
+     "sickn33/antigravity-awesome-skills",
+     42080
+    ],
+    [
+     "libukai/awesome-agent-skills",
+     4783
+    ],
+    [
+     "xingkongliang/skills-manager",
+     2640
+    ]
+   ]
+  },
+  {
+   "size": 15,
+   "stars_total": 80891,
+   "stars_median": 425,
+   "owners": 15,
+   "label_majority": "Coding-agent provider-swap proxies",
+   "top": [
+    [
+     "alishahryar1/free-claude-code",
+     37843
+    ],
+    [
+     "lbjlaq/antigravity-manager",
+     29964
+    ],
+    [
+     "saladday/cc-switch-cli",
+     3896
+    ]
+   ]
+  },
+  {
+   "size": 14,
+   "stars_total": 191074,
+   "stars_median": 8067.5,
+   "owners": 14,
+   "label_majority": "Speech & voice-cloning models",
+   "top": [
+    [
+     "coqui-ai/tts",
+     45652
+    ],
+    [
+     "openbmb/voxcpm",
+     32222
+    ],
+    [
+     "resemble-ai/chatterbox",
+     25280
+    ]
+   ]
+  },
+  {
+   "size": 12,
+   "stars_total": 84290,
+   "stars_median": 61.0,
+   "owners": 12,
+   "label_majority": "noise",
+   "top": [
+    [
+     "composiohq/awesome-claude-skills",
+     66422
+    ],
+    [
+     "travisvn/awesome-claude-skills",
+     13835
+    ],
+    [
+     "letta-ai/claude-subconscious",
+     2818
+    ]
+   ]
+  },
+  {
+   "size": 11,
+   "stars_total": 37613,
+   "stars_median": 102,
+   "owners": 11,
+   "label_majority": "Go protocol-normalizing LLM proxies",
+   "top": [
+    [
+     "songquanpeng/one-api",
+     35388
+    ],
+    [
+     "charmbracelet/fantasy",
+     862
+    ],
+    [
+     "teilomillet/gollm",
+     671
+    ]
+   ]
+  },
+  {
+   "size": 10,
+   "stars_total": 106862,
+   "stars_median": 649.0,
+   "owners": 10,
+   "label_majority": "noise",
+   "top": [
+    [
+     "flowiseai/flowise",
+     54140
+    ],
+    [
+     "simstudioai/sim",
+     28905
+    ],
+    [
+     "coze-dev/coze-studio",
+     21070
+    ]
+   ]
+  },
+  {
+   "size": 9,
+   "stars_total": 107068,
+   "stars_median": 1792,
+   "owners": 9,
+   "label_majority": "RAG document-QA pipelines",
+   "top": [
+    [
+     "mintplex-labs/anything-llm",
+     62344
+    ],
+    [
+     "cinnamon/kotaemon",
+     25499
+    ],
+    [
+     "h2oai/h2ogpt",
+     11976
+    ]
+   ]
+  },
+  {
+   "size": 9,
+   "stars_total": 75,
+   "stars_median": 1,
+   "owners": 9,
+   "label_majority": "Spring AI ReAct tutorial apps",
+   "top": [
+    [
+     "x-augenstern/litemind-agent",
+     54
+    ],
+    [
+     "hupi2004/hupi-ai-agent",
+     12
+    ],
+    [
+     "dale-qi/le-ai-agent",
+     4
+    ]
+   ]
+  },
+  {
+   "size": 7,
+   "stars_total": 52123,
+   "stars_median": 2,
+   "owners": 7,
+   "label_majority": "Self-hosted ChatGPT-clone web apps",
+   "top": [
+    [
+     "danny-avila/librechat",
+     40060
+    ],
+    [
+     "langchain-ai/opengpts",
+     6739
+    ],
+    [
+     "the-open-agent/openagent",
+     5319
+    ]
+   ]
+  },
+  {
+   "size": 7,
+   "stars_total": 296429,
+   "stars_median": 31999,
+   "owners": 7,
+   "label_majority": "Leaked system-prompt archives",
+   "top": [
+    [
+     "x1xhlol/system-prompts-and-models-of-ai-tools",
+     141354
+    ],
+    [
+     "asgeirtj/system_prompts_leaks",
+     47361
+    ],
+    [
+     "elder-plinius/cl4r1t4s",
+     44218
+    ]
+   ]
+  },
+  {
+   "size": 7,
+   "stars_total": 12309,
+   "stars_median": 3,
+   "owners": 7,
+   "label_majority": "PR review & issue-triage bots",
+   "top": [
+    [
+     "the-pr-agent/pr-agent",
+     11909
+    ],
+    [
+     "nayjest/gito",
+     376
+    ],
+    [
+     "mimfort/rag_for_git",
+     18
+    ]
+   ]
+  }
+ ],
+ "islands_ge3": {
+  "n": 52,
+  "all_cross_owner": true
+ },
+ "one_of_a_kind": {
+  "threshold_baseline_p90": 0.743,
+  "n": 323,
+  "pct": 1.72,
+  "median_stars": 12,
+  "class_mix": {
+   "cleaned-ai": 97,
+   "human-built": 226
+  },
+  "top_by_stars": [
+   [
+    "coder/code-server",
+    78141
+   ],
+   [
+    "commaai/openpilot",
+    62898
+   ],
+   [
+    "opencut-app/opencut",
+    60715
+   ],
+   [
+    "tw93/pake",
+    58742
+   ],
+   [
+    "xai-org/grok-1",
+    51692
+   ],
+   [
+    "pmndrs/react-three-fiber",
+    31249
+   ],
+   [
+    "envoyproxy/envoy",
+    28498
+   ],
+   [
+    "delgan/loguru",
+    23990
+   ]
+  ]
+ },
+ "problem_lens": {
+  "near_dup_pct_at_T": 1.69,
+  "ratio_vs_capability": 0.58
+ }
+}
